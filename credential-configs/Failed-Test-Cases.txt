@@ -1,0 +1,57 @@
+Mock:
+1. TC_InjiCertify_GetCredentialForMockIDA_07
+Expected: not_implemented   
+Actual: unsupported_credential_format
+
+2. TC_InjiCertify_GetCredentialForMockIDA_06
+Expected: not_implemented   
+Actual: unsupported_credential_format
+
+
+
+
+
+
+MosipId:
+1. TC_injicertify_Mosipidcredentialissuance_02
+IDA-MLC-003 ERROR
+
+2. TC_injicertify_Mosipidcredentialissuance_17
+Error Mismatch
+3. TC_injicertify_Mosipidcredentialissuance_35
+Error Mismatch
+4. TC_injicertify_Mosipidcredentialissuance_20
+Error Mismatch
+5. TC_injicertify_Mosipidcredentialissuance_24
+Error Mismatch
+6. TC_injicertify_Mosipidcredentialissuance_07
+Error Mismatch
+7. TC_injicertify_Mosipidcredentialissuance_06
+Error Mismatch
+8. TC_injicertify_Mosipidcredentialissuance_08
+Error Mismatch
+
+
+
+Sunbird:
+1. InjiCertify_ESignet_GenerateTokenSunBirdC_Diff_Scope_Valid_sid_For_Neg_flow
+Expected: not_implemented
+Actual: NOT AVAILABLE
+
+2. InjiCertify_GetCredentialSunBirdC_IdpAccessToken_Context_empty_Neg
+Expected: invalid request
+Actual: invalid_request
+
+3. InjiCertify_GetCredentialSunBirdC_IdpAccessToken_context_Emptyarray_Neg
+Expected: vci_exchange_failed   
+Actual: NOT AVAILABLE
+
+4. InjiCertify_GetCredentialSunBirdC_IdpAccessToken_unsupported_format_value_Neg
+Expected: not_implemented   
+Actual: unsupported_credential_format
+
+
+Landregistry:
+AddCredentialConfig
+UpdateCredentialConfig
+DeleteCredentialConfig

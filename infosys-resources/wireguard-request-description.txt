@@ -1,0 +1,1 @@
+I am currently working on client project MOSIP. So, for accessing all the project related resources and URLs, I need to have Wireguard application running. But for running wireguard, the user should be the part of the BuiltIn Administrator Group.

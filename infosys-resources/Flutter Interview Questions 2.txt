@@ -1,0 +1,32 @@
+Other Questions:
+Animations
+Navigations
+Stack Widget
+Positioned Widget
+GestureDetector Widget
+initState in stateful Widget
+ListView
+GridView
+Expanded
+How to align children in row and columns?
+Difference between margin and padding?
+Localization
+Method Channels
+Flutter Forms
+Form Validation
+
+
+
+*****
+Serialization and Deserialization
+Code generator in flutter
+Making api responses
+MediaQuery, responsiveness
+Future Builder and Stream Builder
+Hero Widget: Shared transition in a widget. The Hero widget provides a tag property, which can be used to identify the widget that is being transitioned between screens.
+
+
+
+
+*****
+Explain state management in any of your project 

@@ -1,0 +1,28 @@
+DSA Questions:
+
+Reverse a linked list
+DFS traversal in a graph
+BFS traversal in a graph
+Dijkstra Algo
+MergeSort
+Level Order Traversal in a tree
+Check if the pair with the given sum exists in a array
+Detect cycle in a graph
+Add 1 to a number represented as a linked List
+Next greater element to the right
+Kth smallest element in a array
+Knapsack problem
+Search in a row wise and column wise sorted matrix
+Floyd Warshall Algo
+
+
+
+
+OOPS:
+1. What are the features of OOPS: Inheritance, Encapsulation, Polymorphism, Abstraction
+2. Method Overloading and method overriding
+3. Access Specifier: Private, Public, protected and default
+4. Interface
+5. Difference bw interface and abstract class
+6. Exception
+7. Exception handling

@@ -1,0 +1,33 @@
+
+{
+  "@context": {
+    "@version": 1.1,
+    "@protected": true,
+    "schema": "https://schema.org/",
+    "type": "@type",
+    "ComPassCredential": {
+      "@id": "https://piyush7034.github.io/my-files/ComPass/passport-context.json#ComPassCredential"
+    },
+    "FirstName": "schema:Text",
+    "LastName": "schema:Text",
+    "FirstName (Latin)": "schema:Text",
+    "LastName (Latin)": "schema:Text",
+    "NationalIDNumber": "schema:Text",
+    "DateOfBirth": "schema:Date",
+    "Nationality": "schema:Text",
+    "Gender": "schema:Text",
+    "CAN (Card Access Numner)": "schema:Text",
+    "BirthCountry": "schema:Text",
+    "Image": "schema:ImageObject",
+    "ComPass Number": "schema:Text",
+    "Compass MRZ TD3": "schema:Text",
+    "Eye Color": "schema:Text",
+    "Email": "schema:email",
+    "VC Number": "schema:Number",
+    "Height": "schema:height",
+    "Mobile Number": "schema:telephone",
+    "Address": "schema:Text",
+    "IssuanceDate": "schema:Date",
+    "ExpirationDate": "schema:Date"
+   }
+}

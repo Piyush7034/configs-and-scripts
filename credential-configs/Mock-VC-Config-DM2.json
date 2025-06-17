@@ -1,0 +1,138 @@
+{
+    "credentialConfigKeyId": "MockVerifiableCredential_VCDM2",
+    "vcTemplate": "ewogICAgICJAY29udGV4dCI6IFsKICAgICAgICAgICAgICJodHRwczovL3d3dy53My5vcmcvbnMvY3JlZGVudGlhbHMvdjIiLAogICAgICAgICAgICAgImh0dHBzOi8vYXBpLnJlbGVhc2VkLm1vc2lwLm5ldC8ud2VsbC1rbm93bi9tb3NpcC1pZGEtY29udGV4dC5qc29uIiwKCSAgICAgImh0dHBzOi8vdzNpZC5vcmcvc2VjdXJpdHkvc3VpdGVzL2VkMjU1MTktMjAyMC92MSIKICAgICAgICAgXSwKICAgICAgICAgImlzc3VlciI6ICIke19pc3N1ZXJ9IiwKICAgICAgICAgInR5cGUiOiBbIlZlcmlmaWFibGVDcmVkZW50aWFsIiwgIk1vY2tWZXJpZmlhYmxlQ3JlZGVudGlhbCJdLAogICAgICAgICAidmFsaWRGcm9tIjogIiR7dmFsaWRGcm9tfSIsCiAgICAgICAgICJ2YWxpZFVudGlsIjogIiR7dmFsaWRVbnRpbH0iLAogICAgICAgICAiY3JlZGVudGlhbFN1YmplY3QiOiB7CiAgICAgICAgICAgICJpZCI6ICIke19ob2xkZXJJZH0iLAogICAgICAgICAgICAiZ2VuZGVyIjogJHtnZW5kZXJ9LAogICAgICAgICAgICAicG9zdGFsQ29kZSI6ICR7cG9zdGFsQ29kZX0sCiAgICAgICAgICAgICJmdWxsTmFtZSI6ICR7ZnVsbE5hbWV9LAogICAgICAgICAgICAiZGF0ZU9mQmlydGgiOiAiJHtkYXRlT2ZCaXJ0aH0iLAogICAgICAgICAgICAicGhvbmUiOiAiJHtwaG9uZX0iLAogICAgICAgICAgICAicHJvdmluY2UiOiAke3Byb3ZpbmNlfSwKICAgICAgICAgICAgInJlZ2lvbiI6ICR7cmVnaW9ufSwKICAgICAgICAgICAgIlVJTiI6ICR7VUlOfSwKCSAgICAiVklEIjogJHtVSU59LAogICAgICAgICAgICAiZW1haWwiOiAiJHtlbWFpbH0iCiAgICAgICAgIH0KICAgICB9",
+    "keyManagerAppId": "CERTIFY_VC_SIGN_ED25519",
+    "keyManagerRefId": "ED25519_SIGN",
+    "signatureAlgo": "EdDSA",
+  "context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "credentialType": [
+    "VerifiableCredential",
+    "MockVerifiableCredential"
+  ],
+  "credentialFormat": "ldp_vc",
+  "didUrl": "did:web:mosip.github.io:inji-config:dev2:mock-identity#key-0",
+  "display": [{
+    "name": "Mock Verifiable Credential",
+    "locale": "en",
+    "logo": {
+      "url": "https://mosip.github.io/inji-config/logos/mosipid-logo.png",
+      "alt_text": "a square logo of a MOSIP"
+    },
+    "background_image": { "uri": "https://mosip.github.io/inji-config/vcbackground/default-background.png" },
+    "background_color": "#12107c",
+    "text_color": "#FFFFFF"
+  }],
+  "order": [
+    "fullName",
+    "phone",
+    "dateOfBirth",
+    "gender",
+    "email",
+    "region",
+    "addressLine1",
+    "vcVer",
+    "UIN",
+    "postalCode"
+  ],
+  "scope": "mock_identity_vc_ldp",
+  "cryptographic_binding_methods_supported": [
+    "did:jwk"
+  ],
+  "credential_signing_alg_values_supported": [
+    "Ed25519Signature2020"
+  ],
+  "proof_types_supported": {
+    "jwt": {
+      "proof_signing_alg_values_supported": [
+        "RS256",
+        "ES256"
+      ]
+    }
+  },
+  "doctype": null,
+  "credentialSubject": {
+    "fullName": {
+        "display": [
+            {
+                "name": "Full Name", 
+                "locale": "en"
+            }
+        ]
+    },
+    "phone": {
+        "display": [
+            {
+                "name": "Phone Number", 
+                "locale": "en"
+            }
+        ]
+    },
+    "dateOfBirth": {
+        "display": [
+            {
+                "name": "Date of Birth", 
+                "locale": "en"
+            }
+        ]
+    },
+    "gender": {
+        "display": [
+            {
+                "name": "Gender", 
+                "locale": "en"
+            }
+        ]
+    },
+    "email": {
+        "display": [
+            {
+                "name": "Email Id", 
+                "locale": "en"
+            }
+        ]
+    },
+    "region": {
+        "display": [
+            {
+                "name": "Region", 
+                "locale": "en"
+            }
+        ]
+    },
+    "addressLine1": {
+        "display": [
+            {
+                "name": "Address Line 1", 
+                "locale": "en"
+            }
+        ]
+    },
+    "UIN": {
+        "display": [
+            {
+                "name": "UIN", 
+                "locale": "en"
+            }
+        ]
+    },
+    "vcVer": {
+        "display": [
+            {
+                "name": "VC Verification", 
+                "locale": "en"
+            }
+        ]
+    },
+    "postalCode": {
+        "display": [
+            {
+                "name": "Postal Code", 
+                "locale": "en"
+            }
+        ]
+    }
+  },
+  "pluginConfigurations": null
+}

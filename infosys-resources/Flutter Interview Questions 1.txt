@@ -1,0 +1,94 @@
+Flutter Interview Questions 
+
+Level A
+
+What is Flutter and why is it preferred over other mobile app development tools?
+Flutter is an open-source UI software development kit created by Google. It is preferred because it allows for building natively compiled applications for mobile, web, and desktop from a single codebase.
+
+Explain the difference between StatelessWidget and StatefulWidget.
+StatelessWidget does not maintain any state and is immutable, whereas StatefulWidget maintains state that can change over time, making it mutable.
+
+How do you create a new Flutter project? 
+You can create a new Flutter project using the command flutter create project_name in the terminal or using an IDE like Android Studio or Visual Studio Code with the Flutter plugin.
+
+What is a widget in Flutter? 
+A widget is an immutable description of part of the user interface. Everything in Flutter is a widget, including layout models and UI controls.
+
+How do you handle state management in Flutter? 
+State management can be handled using various methods such as setState, InheritedWidget, Provider, Riverpod, Bloc, Redux, etc.
+
+What is the purpose of the setState method? 
+The setState method is used to tell the Flutter framework that the internal state of the object has changed, which triggers a rebuild of the UI to reflect the changes.
+How do you navigate between different screens in Flutter? 
+Navigation between screens can be handled using the Navigator class and its methods like push, pop, and pushReplacement.
+
+What are packages and plugins in Flutter? 
+Packages are a way to modularize code for reusability, containing Dart code, whereas plugins provide a way to use platform-specific functionality using platform channels.
+
+How do you run a Flutter app on an Android device? 
+Connect the Android device, enable developer mode and USB debugging, and use the command flutter run in the terminal.
+
+What does the acronym SDK stand for?
+Software Development Kit is a set of software tools and programs provided by software and hardware vendors that developers can use to develop applications for specific platforms. An SDK helps developers easily integrate their apps with a vendor's services. SDKs can include APIs(Application Programming Interfaces), sample code, documentation, and other resources that help developers create software applications.
+
+Which widget allows us to refresh the screen?
+RefreshIndicator Widget enables us to refresh the screen. When the user pulls down on the widget, the onRefresh callback is triggered, which typically involves fetching new data from a server or updating the UI in some way.
+
+
+
+
+Level B
+
+Explain the concept of hot reload in Flutter. Hot reload allows you to instantly see the results of changes made to the code without restarting the application. It preserves the app state, speeding up the development process.
+
+How do you handle user input in Flutter? User input is handled using input widgets like TextField, Form, and handling events through controllers like TextEditingController and various event listeners.
+
+What are the different state management solutions in Flutter? Popular state management solutions include setState, InheritedWidget, Provider, Riverpod, Bloc, Redux, GetX, and MobX.
+
+How do you manage assets in Flutter? Assets like images, fonts, and other files are managed by declaring them in the pubspec.yaml file and accessing them using the AssetImage class or similar widgets.
+
+What is the difference between FutureBuilder and StreamBuilder? FutureBuilder is used to handle asynchronous data from a Future, while StreamBuilder listens to a Stream of data and rebuilds the UI whenever the stream emits a new event.
+
+How do you implement accessibility features in Flutter? Accessibility can be implemented by providing semantic labels, using accessible widgets, testing with screen readers, and adhering to accessibility guidelines.
+
+What is pubspec.yaml file?
+While creating a Flutter project, a particular type of file is always included at the top of the project. This file is known as the pubspec.yaml file, also called ‘pubspec’. This file contains information about a project's dependencies, such as packages and their versions, typefaces, and so on. It ensures that the package version is the same the next time you create the project. You can also place restrictions on the app. This project's configuration file will be used a lot while working with the Flutter project. This specification is written in YAML, a human-readable markup language.
+
+
+Can you name the command used to compile the release mode?
+This command “Flutter run -- release” is used to compile the release mode. Release mode for a web app means that the app is compiled with the dart2js compiler for best performance.
+
+Name the different types of build modes in Flutter.
+
+here are three types of build modes in Flutter. These include:
+Debug- It is used to test the apps. On Android Studio, you can find a green play button on the top panel.
+“Flutter run”
+Profile- In this mode, some debugging ability is maintained - enough to profile your app's performance, and also, it has the performance as the release mode.
+“Flutter run -- profile”
+Release- It is used for deploying the app on marketplaces.
+“Flutter run - - release”
+
+
+
+Level C
+
+Explain the term “Tree shaking” in Flutter.
+Tree shaking is a method of removing the unused module in the bundle during the development process. Tree shaking serves as a sort of optimization technique that optimizes the code by removing the dead code.
+While importing or exporting codes, there might be dead codes hanging around. Removing these dead codes reduces the code size which in turn improves the performance of the application.
+
+
+Explain the concept of Dart isolates and how they are used in Flutter. Dart isolates are separate memory heaps that run in parallel to manage concurrent computations without sharing memory, used for CPU-intensive tasks to avoid blocking the main thread.
+
+How do you implement internationalization in Flutter? Internationalization can be implemented using the intl package, generating localized messages and formatting dates, numbers, and other locale-specific data.
+
+What are the best practices for writing clean and maintainable Flutter code? Best practices include using the MVVM or other architectural patterns, modularizing code into smaller components, writing unit tests, and following the Dart style guide.
+
+How do you integrate Flutter with native code? Flutter can be integrated with native code using platform channels to communicate between Dart and platform-specific code (Java/Kotlin for Android, Swift/Objective-C for iOS).
+
+What are the challenges of developing a Flutter app for both iOS and Android? Challenges include handling platform-specific behaviors, UI differences, integrating native code, and ensuring consistent performance and user experience across both platforms.
+
+Explain the role of the Flutter Inspector and how it helps in debugging. The Flutter Inspector is a tool in the Flutter DevTools suite that allows developers to examine the widget tree, debug layouts, view properties, and track performance to identify issues.
+
+
+
+https://www.turing.com/interview-questions/flutter

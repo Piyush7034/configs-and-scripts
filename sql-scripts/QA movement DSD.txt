@@ -1,0 +1,141 @@
+
+Purpose: To give the last spring handover to qa team for inji-certify
+
+ENV: qa-inji1
+movement of below image : 
+mosipqa/inji-certify-with-plugins:develop -> mosipqa/inji-certify-with-plugins:release-0.11.x
+
+Note: 
+- Below config to be used for all usecases:
+	Branch - release-0.8.x , GitHub - https://github.com/mosip/inji-config/tree/release-0.8.x 
+
+- After sanity from release-0.8.x branch, qa can create a new branch from release-0.8.x branch for testing
+ 
+
+Deploy and restart : 
+
+
+Name Space: mock-identity-usecase
+
+Certify: mosipqa/inji-certify-with-plugins:release-0.11.x
+Artifactory: NA
+Note: Below property to be added to the yaml file of deployment:
+	```
+		containers:
+			env:
+				- name: install_hsm_client
+					value: 'true'
+	```
+active spring profile -> default, mock-identity
+spring_config_label_env -> release-0.8.x (Later changed to branch used by qa for testing)
+Plugin in to be used : mock-certify-plugin
+
+Run the DB Script : https://github.com/mosip/inji-certify/blob/release-0.11.x/db_upgrade_script/mosip_certify/sql/0.10.2_to_0.11.0_upgrade.sql 
+
+Please make sure the secret  is as mentioned in : https://github.com/mosip/inji-config/blob/release-0.8.x/certify-mock-identity.properties 
+
+
+Name Space:  mosipid-identity-usecase : 
+
+mosipqa/inji-certify-with-plugins:release-0.11.x
+Artifactory: NA
+Note: Below property to be added to the yaml file of deployment:
+	```
+		containers:
+			env:
+				- name: install_hsm_client
+					value: 'true'
+	```
+active spring profile -> default, mosipid-identity
+spring_config_label_env -> release-0.8.x (Later changed to branch used by qa for testing)
+Plugin in to be used : mosip-identity-certify-plugin
+
+Run the DB Script : https://github.com/mosip/inji-certify/blob/release-0.11.x/db_upgrade_script/mosip_certify/sql/0.10.2_to_0.11.0_upgrade.sql 
+
+Please make sure the secret  is as mentioned in : https://github.com/mosip/inji-config/blob/release-0.8.x/certify-mosipid-identity.properties 
+
+
+
+Name Space: sunbirdrc-insurance-usecase
+
+mosipqa/inji-certify-with-plugins:release-0.11.x
+Artifactory: NA
+Note: Below property to be added to the yaml file of deployment:
+	```
+		containers:
+			env:
+				- name: install_hsm_client
+					value: 'true'
+	```
+active spring profile -> default, sunbird-insurance
+spring_config_label_env -> release-0.8.x (Later changed to branch used by qa for testing)
+Plugin to be used : sunbird-rc-certify-integration-impl plugin
+
+Run the DB Script : https://github.com/mosip/inji-certify/blob/release-0.11.x/db_upgrade_script/mosip_certify/sql/0.10.2_to_0.11.0_upgrade.sql
+
+Please make sure the secret  is as mentioned in : https://github.com/mosip/inji-config/blob/release-0.8.x/certify-sunbird-insurance.properties
+
+
+Name Space: landregistry-usecase
+
+mosipqa/inji-certify-with-plugins:release-0.11.x
+Artifactory: NA
+Note: Below property to be added to the yaml file of deployment:
+	```
+		containers:
+			env:
+				- name: install_hsm_client
+					value: 'true'
+	```
+active spring profile -> default, postgres-landregistry
+spring_config_label_env -> release-0.8.x (Later changed to branch used by qa for testing)
+Plugin to be used : postgrtes_dataprovider_plugin
+
+Run the DB Script : https://github.com/mosip/inji-certify/blob/release-0.11.x/db_upgrade_script/mosip_certify/sql/0.10.2_to_0.11.0_upgrade.sql
+
+Please make sure the secret  is as mentioned in : https://github.com/mosip/inji-config/blob/release-0.8.x/certify-postgres-landregistry.properties
+
+
+
+
+Name Space:  inji-certify-academic
+
+mosipqa/inji-certify-with-plugins:release-0.11.x
+Artifactory: NA
+Note: Below property to be added to the yaml file of deployment:
+	```
+		containers:
+			env:
+				- name: install_hsm_client
+					value: 'true'
+	```
+active spring profile -> default, postgres-university
+spring_config_label_env -> release-0.8.x (Later changed to branch used by qa for testing)
+Plugin to be used : postgrtes_dataprovider_plugin
+
+Run the DB Script : https://github.com/mosip/inji-certify/blob/release-0.11.x/db_upgrade_script/mosip_certify/sql/0.10.2_to_0.11.0_upgrade.sql
+
+Please make sure the secret  is as mentioned in : https://github.com/mosip/inji-config/blob/dev2/certify-postgres-university.properties
+
+
+
+
+
+Name Space: mock-mdl-usecase
+
+mosipqa/inji-certify-with-plugins:release-0.11.x
+Artifactory: NA
+Note: Below property to be added to the yaml file of deployment:
+	```
+		containers:
+			env:
+				- name: install_hsm_client
+					value: 'true'
+	```
+active spring profile -> default, mock-mdl
+spring_config_label_env -> release-0.8.x (Later changed to branch used by qa for testing)
+Plugin to be used : mock-certify-plugin
+
+Run the DB Script : https://github.com/mosip/inji-certify/blob/release-0.11.x/db_upgrade_script/mosip_certify/sql/0.10.2_to_0.11.0_upgrade.sql
+
+Please make sure the secret  is as mentioned in : https://github.com/mosip/inji-config/blob/release-0.8.x/certify-mock-mdl.properties

@@ -1,0 +1,97 @@
+Current Feature to issue a VC:
+=> Controller => VCIssuanceController
+    RequestBody: CredentialRequest
+    Request Method: POST
+    URL: "/issuance/credential"
+=> Service => CertifyIssuanceServiceImpl
+=> Response => VCResult<T>
+    VCResult =>
+        {
+            "credential": <JSONLD Credential>
+        }
+
+
+Requirement:
+1. Issuance service will work as it is to issue the credentials by the issuer.
+2. Add new endpoint:
+    RequestType: POST
+    URL: "/credentials/issue"
+    
+    Request Body: 
+    CredentialIssueRequest:
+    {
+        credential: <JSONLD Credential>
+    }
+
+    Response Body:
+    IssueCredentialSuccess
+    {
+        "verifiableCredential": <JSONLD Credential>
+    }
+3. The VC must be stored in the db where it can be fetched with a unique identifier.
+4. The table must hold the unique identifier, createdTime and updatedTime.
+
+
+My approach:
+1. Use the existing endpoint to generate a VC.
+2. Use the generated VC as a request for the new endpoint
+3. Create a table for storing the VC along with other data.
+4. Return the response 
+
+## 2 Options in the above approach:
+1. Use the existing service to get a VC and store and consume it.
+2. Use directly the api call to request a VC
+
+Pros and cons of both approaches??
+
+Ques: Can we avoid passing credentialRequest for the new endpoint. 
+Note: credentialRequest is used as a request body in the existing `getCredential` endpoint
+
+
+
+
+Other requirement:
+1. Update status of the credential.
+2. Assume that the credential issued from the existing endpoint already has a credentialStatus Property.
+{
+    "credential": {
+        ...,
+        "credentialStatus": {
+            "id": "",
+            "type": "",
+            "statusPurpose": "",
+            "statusListIndex": "",
+            "statusListCredential": "",
+        },
+        ...
+    }
+}
+3. Add new endpoint:
+    RequestType: POST
+    URL: "/credentials/status"
+    
+    Request Body: 
+    CredentialStatusRequest:
+    {
+        "credentialId": "" 
+        "credentialStatus": {
+            "id": "",
+            "type": "",
+            "statusPurpose": "",
+            "statusListIndex": "",
+            "statusListCredential": "",
+        }
+    }
+
+    Response Body:
+    String with status code
+
+
+MyApproach:
+1. Using credentialId from credentialStatusRequest object, fetch the stored credential.
+2. If credentialStatus is added within the credential itself, then
+    i. Update the status.
+    ii. Append new status to existing list.
+    iii. Remove the proof.
+    iv. Add the proof to updated vc.
+3. If credentialStatus is a different attribute in the credentialStorage table, then update accordingly.

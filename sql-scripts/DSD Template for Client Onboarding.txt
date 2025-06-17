@@ -1,0 +1,46 @@
+Description:
+
+Purpose: To test VC download for mock-identity usecase as a dataprovider plugin.
+
+ENV: dev2
+
+
+Details for clientId creation:
+
+ClientId: mpartner-default-mimoto-mock-oidc
+
+"userClaims":  [       #Claims Section defines the different attributes of User Data taht is accessible to the OIDC client
+            "birthdate",
+            "address",
+            "gender",
+            "name",
+            "phone_number",
+            "picture",
+            "email",
+            "individual_id"
+        ],
+    "authContextRefs":  [ #ACR values define the various ways a user can login e.g through INJI,using Bioemtrics and Throguh OTP
+            "mosip:idp:acr:linked-wallet",
+            "mosip:idp:acr:biometrics",
+            "mosip:idp:acr:generated-code"
+        ],
+    "logoUri": "https://mosip.github.io/inji-config/logos/travel.png",
+"redirectUris": [
+      "http://localhost:3004/redirect",
+            "https://injiweb.dev2.mosip.net/redirect ",
+            "io.mosip.residentapp.inji://oauthredirect"
+    ],
+    "grantTypes": [
+      "authorization_code"
+    ],
+    "clientAuthMethods": [
+      "private_key_jwt"
+    ]
+
+
+
+ update existing oidckeystore.p12 file in mimoto pod with this new client alias: mpartner-mock-testing
+
+create new secret in mimoto  to refer this new client id
+
+The secret should be added under the placeholder: ${mimoto.oidc.mock.partner.clientid}

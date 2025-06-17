@@ -1,0 +1,200 @@
+{
+    "credentialConfigKeyId": "RegistrationReceiptCredential_VCDM2.0",
+    "vcTemplate": "ewogICAgICAgICAiQGNvbnRleHQiOiBbCiAgICAgICAgICAgICAgICAgImh0dHBzOi8vd3d3LnczLm9yZy9ucy9jcmVkZW50aWFscy92MiIsCiAgICAgICAgICAgICAgICAgImh0dHBzOi8vbW9zaXAuZ2l0aHViLmlvL2luamktY29uZmlnL2NvbnRleHRzL2xhbmRyZWdpc3RyeS1yZWdpc3RyYXRpb24tcmVjZWlwdC1jb250ZXh0Lmpzb24iLAogICAgICAgICAgICAgICAgICJodHRwczovL3czaWQub3JnL3NlY3VyaXR5L3N1aXRlcy9lZDI1NTE5LTIwMjAvdjEiCiAgICAgICAgIF0sCiAgICAgICAgICJpc3N1ZXIiOiAiJHtfaXNzdWVyfSIsCiAgICAgICAgICJ0eXBlIjogWwogICAgICAgICAgICAgIlZlcmlmaWFibGVDcmVkZW50aWFsIiwKICAgICAgICAgICAgICJSZWdpc3RyYXRpb25SZWNlaXB0Q3JlZGVudGlhbCIKICAgICAgICAgXSwKICAgICAgICAgInZhbGlkRnJvbSI6ICIke3ZhbGlkRnJvbX0iLAogICAgICAgICAidmFsaWRVbnRpbCI6ICIke3ZhbGlkVW50aWx9IiwKICAgICAgICAgImNyZWRlbnRpYWxTdWJqZWN0IjogewogICAgICAgICAgICAiTnVtYmVyT2ZDQVIiOiAiJHtjYXJfcmVnaXN0cmF0aW9uX251bWJlcn0iLAogICAgICAgICAgICAiUmVnaXN0cmF0aW9uRGF0ZSI6ICIke3JlZ2lzdHJhdGlvbl9kYXRlfSIsCiAgICAgICAgICAgICJSdXJhbFByb3BlcnR5TmFtZSI6ICIke3J1cmFsX3Byb3BlcnR5X25hbWV9IiwKICAgICAgICAgICAgIk11bmljaXBhbGl0eSI6ICIke211bmljaXBhbGl0eX0iLAogICAgICAgICAgICAiTGF0aXR1ZGUiOiAiJHtsYXRpdHVkZX0iLAogICAgICAgICAgICAiTG9uZ2l0dWRlIjogIiR7bG9uZ2l0dWRlfSIsCiAgICAgICAgICAgICJUb3RhbEFyZWEiOiAke3RvdGFsX2FyZWF9LAogICAgICAgICAgICAiRmlzY2FsTW9kdWxlcyI6ICR7ZmlzY2FsX21vZHVsZXN9LAogICAgICAgICAgICAiUHJvdG9jb2xDb2RlIjogIiR7cHJvdG9jb2xfY29kZX0iLAogICAgICAgICAgICAiQ1BGIjogIiR7Y3BmfSIsCiAgICAgICAgICAgICJIb2xkZXJOYW1lIjogIiR7aG9sZGVyX25hbWV9IiwKICAgICAgICAgICAgIlRvdGFsRGVjbGFyZWRBcmVhIjogJHt0b3RhbF9hcmVhX2RlY2xhcmVkfSwKICAgICAgICAgICAgIkFkbWluaXN0cmF0aXZlRWFzZW1lbnRBcmVhIjogJHthZG1pbmlzdHJhdGl2ZV9lYXNlbWVudF9hcmVhfSwKICAgICAgICAgICAgIk5ldEFyZWEiOiAke25ldF9hcmVhfSwKICAgICAgICAgICAgIkNvbnNvbGlkYXRlZEFyZWEiOiAke2NvbnNvbGlkYXRlZF9hcmVhfSwKICAgICAgICAgICAgIk5hdGl2ZVZlZ2V0YXRpb25SZW1uYW50IjogJHtuYXRpdmVfdmVnZXRhdGlvbl9yZW1uYW50fSwKICAgICAgICAgICAgIkxlZ2FsUmVzZXJ2ZUFyZWEiOiAke2xlZ2FsX3Jlc2VydmVfYXJlYX0sCiAgICAgICAgICAgICJQZXJtYW5lbnRQcmVzZXJ2YXRpb25BcmVhIjogJHtwZXJtYW5lbnRfcHJlc2VydmF0aW9uX2FyZWF9LAogICAgICAgICAgICAiUmVzdHJpY3RlZFVzZUFyZWEiOiAke3Jlc3RyaWN0ZWRfdXNlX2FyZWF9CiAgICAgICAgIH0KICAgICB9",
+    "keyManagerAppId": "CERTIFY_VC_SIGN_ED25519",
+    "keyManagerRefId": "ED25519_SIGN",
+    "signatureAlgo": "EdDSA",
+  "context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "credentialType": [
+    "VerifiableCredential",
+    "RegistrationReceiptCredential"
+  ],
+  "credentialFormat": "ldp_vc",
+  "didUrl": "did:web:mosip.github.io:inji-config:dev-int-inji:landregistry-ed25519#key-0",
+  "display": [{
+    "name": "REGISTRATION RECEIPT OF THE RURAL PROPERTY IN CAR",
+    "locale": "en",
+    "logo": {
+      "url": "https://mosip.github.io/inji-config/logos/agro-vertias-logo.png",
+      "alt_text": "Registration Receipt Credential logo"
+    },
+	"background_image": { "uri": "https://mosip.github.io/inji-config/logos/agro-vertias-logo.png" },
+    "background_color": "#ebfaff",
+    "text_color": "#000000"
+  }],
+  "order": ["NumberOfCAR","RegistrationDate","RuralPropertyName","Municipality","Latitude","Longitude","TotalArea","FiscalModules","ProtocolCode","CPF","HolderName","TotalDeclaredArea","AdministrativeEasementArea","NetArea","ConsolidatedArea","NativeVegetationRemnant","LegalReserveArea","PermanentPreservationArea","RestrictedUseArea"],
+  "scope": "land_registry_vc_ldp",
+  "cryptographic_binding_methods_supported": [
+    "did:jwk"
+  ],
+  "credential_signing_alg_values_supported": [
+    "Ed25519Signature2020"
+  ],
+  "proof_types_supported": {
+    "jwt": {
+      "proof_signing_alg_values_supported": [
+        "RS256",
+		"PS256",
+        "ES256"
+      ]
+    }
+  },
+  "doctype": null,
+  "credentialSubject": {
+    "NumberOfCAR": {
+      "display": [
+        {
+          "name": "CAR Registration Number",
+          "locale": "en"
+        }
+      ]
+    },
+    "RegistrationDate": {
+      "display": [
+        {
+          "name": "Registration Date",
+          "locale": "en"
+        }
+      ]
+    },
+    "RuralPropertyName": {
+      "display": [
+        {
+          "name": "Rural Property Name",
+          "locale": "en"
+        }
+      ]
+    },
+    "Municipality": {
+      "display": [
+        {
+          "name": "Municipality",
+          "locale": "en"
+        }
+      ]
+    },
+    "Latitude": {
+      "display": [
+        {
+          "name": "Latitude",
+          "locale": "en"
+        }
+      ]
+    },
+    "Longitude": {
+      "display": [
+        {
+          "name": "Longitude",
+          "locale": "en"
+        }
+      ]
+    },
+    "TotalArea": {
+      "display": [
+        {
+          "name": "Total Area",
+          "locale": "en"
+        }
+      ]
+    },
+    "FiscalModules": {
+      "display": [
+        {
+          "name": "Fiscal Modules",
+          "locale": "en"
+        }
+      ]
+    },
+    "ProtocolCode": {
+      "display": [
+        {
+          "name": "Protocol Code",
+          "locale": "en"
+        }
+      ]
+    },
+    "CPF": {
+      "display": [
+        {
+          "name": "CPF",
+          "locale": "en"
+        }
+      ]
+    },
+    "HolderName": {
+      "display": [
+        {
+          "name": "Holder Name",
+          "locale": "en"
+        }
+      ]
+    },
+    "TotalDeclaredArea": {
+      "display": [
+        {
+          "name": "Total Declared Area",
+          "locale": "en"
+        }
+      ]
+    },
+    "AdministrativeEasementArea": {
+      "display": [
+        {
+          "name": "Administrative Easement Area",
+          "locale": "en"
+        }
+      ]
+    },
+    "NetArea": {
+      "display": [
+        {
+          "name": "Net Area",
+          "locale": "en"
+        }
+      ]
+    },
+    "ConsolidatedArea": {
+      "display": [
+        {
+          "name": "Consolidated Area",
+          "locale": "en"
+        }
+      ]
+    },
+    "NativeVegetationRemnant": {
+      "display": [
+        {
+          "name": "Native Vegetation Remnant",
+          "locale": "en"
+        }
+      ]
+    },
+    "LegalReserveArea": {
+      "display": [
+        {
+          "name": "Legal Reserve Area",
+          "locale": "en"
+        }
+      ]
+    },
+    "PermanentPreservationArea": {
+      "display": [
+        {
+          "name": "Permanent Preservation Area",
+          "locale": "en"
+        }
+      ]
+    },
+    "RestrictedUseArea": {
+      "display": [
+        {
+          "name": "Restricted Use Area",
+          "locale": "en"
+        }
+      ]
+    }
+  },
+  "pluginConfigurations": null
+}

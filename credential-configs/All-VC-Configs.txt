@@ -1,0 +1,944 @@
+Mock VC DM 1.1:
+{
+    "credentialConfigKeyId": "MockVerifiableCredential",
+    "vcTemplate": "ewogICAgICJAY29udGV4dCI6IFsKICAgICAgICAgICAgICJodHRwczovL3d3dy53My5vcmcvMjAxOC9jcmVkZW50aWFscy92MSIsCiAgICAgICAgICAgICAiaHR0cHM6Ly92aGFyc2guZ2l0aHViLmlvL0RJRC9tb2NrLWNvbnRleHQuanNvbiIKICAgICAgICAgXSwKICAgICAgICAgImlzc3VlciI6ICIke19pc3N1ZXJ9IiwKICAgICAgICAgInR5cGUiOiBbIlZlcmlmaWFibGVDcmVkZW50aWFsIiwgIk1vY2tWZXJpZmlhYmxlQ3JlZGVudGlhbCJdLAogICAgICAgICAiaXNzdWFuY2VEYXRlIjogIiR7dmFsaWRGcm9tfSIsCiAgICAgICAgICJleHBpcmF0aW9uRGF0ZSI6ICIke3ZhbGlkVW50aWx9IiwKICAgICAgICAgImNyZWRlbnRpYWxTdWJqZWN0IjogewogICAgICAgICAgICAiaWQiOiAiJHtfaG9sZGVySWR9IiwKICAgICAgICAgICAgImdlbmRlciI6ICR7Z2VuZGVyfSwKICAgICAgICAgICAgInBvc3RhbENvZGUiOiAke3Bvc3RhbENvZGV9LAogICAgICAgICAgICAiZnVsbE5hbWUiOiAke2Z1bGxOYW1lfSwKICAgICAgICAgICAgImRhdGVPZkJpcnRoIjogIiR7ZGF0ZU9mQmlydGh9IiwKICAgICAgICAgICAgInBob25lIjogIiR7cGhvbmV9IiwKICAgICAgICAgICAgInByb3ZpbmNlIjogJHtwcm92aW5jZX0sCiAgICAgICAgICAgICJyZWdpb24iOiAke3JlZ2lvbn0sCiAgICAgICAgICAgICJVSU4iOiAke1VJTn0sCgkgICAgIlZJRCI6ICR7VUlOfSwKICAgICAgICAgICAgImVtYWlsIjogIiR7ZW1haWx9IgogICAgICAgICB9CiAgICAgfQ==",
+    "keyManagerAppId": "CERTIFY_VC_SIGN_EC_R1",
+    "keyManagerRefId": "EC_SECP256R1_SIGN",
+    "signatureAlgo": "ES256",
+  "context": [
+    "https://www.w3.org/2018/credentials/v1"
+  ],
+  "credentialType": [
+    "VerifiableCredential",
+    "MockVerifiableCredential"
+  ],
+  "credentialFormat": "ldp_vc",
+  "didUrl": "did:web:mosip.github.io:inji-config:dev2:mock-identity-ecr1#key-0",
+  "display": [{
+    "name": "Mock Verifiable Credential",
+    "locale": "en",
+    "logo": {
+      "url": "https://mosip.github.io/inji-config/logos/mosipid-logo.png",
+      "alt_text": "a square logo of a MOSIP"
+    },
+    "background_image": { "uri": "https://mosip.github.io/inji-config/vcbackground/default-background.png" },
+    "background_color": "#12107c",
+    "text_color": "#FFFFFF"
+  }],
+  "order": [
+    "fullName",
+    "phone",
+    "dateOfBirth",
+    "gender",
+    "email",
+    "region",
+    "addressLine1",
+    "vcVer",
+    "UIN",
+    "postalCode"
+  ],
+  "scope": "mock_identity_vc_ldp",
+  "cryptographic_binding_methods_supported": [
+    "did:jwk"
+  ],
+  "credential_signing_alg_values_supported": [
+    "Ed25519Signature2020"
+  ],
+  "proof_types_supported": {
+    "jwt": {
+      "proof_signing_alg_values_supported": [
+        "RS256",
+        "ES256"
+      ]
+    }
+  },
+  "doctype": null,
+  "credentialSubject": {
+    "fullName": {
+        "display": [
+            {
+                "name": "Full Name", 
+                "locale": "en"
+            }
+        ]
+    },
+    "phone": {
+        "display": [
+            {
+                "name": "Phone Number", 
+                "locale": "en"
+            }
+        ]
+    },
+    "dateOfBirth": {
+        "display": [
+            {
+                "name": "Date of Birth", 
+                "locale": "en"
+            }
+        ]
+    },
+    "gender": {
+        "display": [
+            {
+                "name": "Gender", 
+                "locale": "en"
+            }
+        ]
+    },
+    "email": {
+        "display": [
+            {
+                "name": "Email Id", 
+                "locale": "en"
+            }
+        ]
+    },
+    "region": {
+        "display": [
+            {
+                "name": "Region", 
+                "locale": "en"
+            }
+        ]
+    },
+    "addressLine1": {
+        "display": [
+            {
+                "name": "Address Line 1", 
+                "locale": "en"
+            }
+        ]
+    },
+    "UIN": {
+        "display": [
+            {
+                "name": "UIN", 
+                "locale": "en"
+            }
+        ]
+    },
+    "vcVer": {
+        "display": [
+            {
+                "name": "VC Verification", 
+                "locale": "en"
+            }
+        ]
+    },
+    "postalCode": {
+        "display": [
+            {
+                "name": "Postal Code", 
+                "locale": "en"
+            }
+        ]
+    }
+  },
+  "pluginConfigurations": null
+}
+
+
+
+
+
+
+
+
+Mock VC DM 2.0:
+{
+    "credentialConfigKeyId": "LandStatementCredential_VCDM2.0",
+    "vcTemplate": "ewogICAgICAgICAiQGNvbnRleHQiOiBbCiAgICAgICAgICAgICAgICAgImh0dHBzOi8vd3d3LnczLm9yZy9ucy9jcmVkZW50aWFscy92MiIsCiAgICAgICAgICAgICAgICAgImh0dHBzOi8vbW9zaXAuZ2l0aHViLmlvL2luamktY29uZmlnL2NvbnRleHRzL2xhbmRyZWdpc3RyeS1zdGF0ZW1lbnQtY29udGV4dC5qc29uIiwKICAgICAgICAgICAgICAgICAiaHR0cHM6Ly93M2lkLm9yZy9zZWN1cml0eS9zdWl0ZXMvZWQyNTUxOS0yMDIwL3YxIgogICAgICAgICBdLAogICAgICAgICAiaXNzdWVyIjogIiR7X2lzc3Vlcn0iLAogICAgICAgICAidHlwZSI6IFsKICAgICAgICAgICAgICJWZXJpZmlhYmxlQ3JlZGVudGlhbCIsCiAgICAgICAgICAgICAiTGFuZFN0YXRlbWVudENyZWRlbnRpYWwiCiAgICAgICAgIF0sCiAgICAgICAgICJ2YWxpZEZyb20iOiAiJHt2YWxpZEZyb219IiwKICAgICAgICAgInZhbGlkVW50aWwiOiAiJHt2YWxpZFVudGlsfSIsCiAgICAgICAgICJjcmVkZW50aWFsU3ViamVjdCI6IHsKICAgICAgICAgICAgIk51bWJlck9mQ0FSIjogIiR7Y2FyX3JlZ2lzdHJhdGlvbl9udW1iZXJ9IiwKICAgICAgICAgICAgIlJlZ2lzdHJhdGlvbkRhdGUiOiAiJHtyZWdpc3RyYXRpb25fZGF0ZX0iLAogICAgICAgICAgICAiTGFzdE1vZGlmaWNhdGlvbkRhdGUiOiAiJHtkYXRlX29mX2xhc3RfYW1lbmRtZW50fSIsCiAgICAgICAgICAgICJSdXJhbFByb3BlcnR5QXJlYSI6ICR7cnVyYWxfcHJvcGVydHlfYXJlYX0sCiAgICAgICAgICAgICJMYXRpdHVkZSI6ICIke2xhdGl0dWRlfSIsCiAgICAgICAgICAgICJMb25naXR1ZGUiOiAiJHtsb25naXR1ZGV9IiwKICAgICAgICAgICAgIk11bmljaXBhbGl0eSI6ICIke211bmljaXBhbGl0eX0iLAogICAgICAgICAgICAiRXh0ZXJuYWxDb25kaXRpb24iOiAiJHtleHRlcm5hbF9jb25kaXRpb259IiwKICAgICAgICAgICAgIlJlZ2lzdHJhdGlvblN0YXR1cyI6ICIke3JlZ2lzdHJhdGlvbl9zdGF0dXN9IiwKICAgICAgICAgICAgIlBSQUNvbmRpdGlvbiI6ICIke3ByYV9jb25kaXRpb259IiwKICAgICAgICAgICAgIkdyb3VuZENvdmVyYWdlIjogIiR7bGFuZF9jb3Zlcn0iLAogICAgICAgICAgICAiTmF0aXZlVmVnZXRhdGlvblJlbW5hbnRBcmVhIjogJHtuYXRpdmVfdmVnZXRhdGlvbl9yZW1uYW50X2FyZWF9LAogICAgICAgICAgICAiQ29uc29saWRhdGVkUnVyYWxBcmVhIjogJHtjb25zb2xpZGF0ZWRfcnVyYWxfYXJlYX0sCiAgICAgICAgICAgICJBZG1pbmlzdHJhdGl2ZUVhc2VtZW50QXJlYSI6ICR7YWRtaW5pc3RyYXRpdmVfZWFzZW1lbnRfYXJlYX0sCiAgICAgICAgICAgICJMZWdhbFJlc2VydmVMb2NhdGlvbiI6ICIke2xvY2F0aW9uX29mX2xlZ2FsX3Jlc2VydmV9IiwKICAgICAgICAgICAgIlJlZ2lzdGVyZWRMZWdhbFJlc2VydmVBcmVhIjogJHtyZWdpc3RlcmVkX2xlZ2FsX3Jlc2VydmVfYXJlYX0sCiAgICAgICAgICAgICJHZW9yZWZlcmVuY2VkTGVnYWxSZXNlcnZlQXJlYSI6ICR7Z2VvcmVmZXJlbmNlZF9sZWdhbF9yZXNlcnZlX2FyZWF9LAogICAgICAgICAgICAiQXBwcm92ZWRVbnJlZ2lzdGVyZWRMZWdhbFJlc2VydmVBcmVhIjogJHthcHByb3ZlZF9sZWdhbF9yZXNlcnZlX2FyZWFfbm90X3JlZ2lzdGVyZWR9LAogICAgICAgICAgICAiUHJvcG9zZWRMZWdhbFJlc2VydmVBcmVhIjogJHtwcm9wb3NlZF9sZWdhbF9yZXNlcnZlX2FyZWF9LAogICAgICAgICAgICAiVG90YWxEZWNsYXJlZExlZ2FsUmVzZXJ2ZSI6ICR7dG90YWxfbGVnYWxfcmVzZXJ2ZV9kZWNsYXJlZH0sCiAgICAgICAgICAgICJQZXJtYW5lbnRQcmVzZXJ2YXRpb25BcmVhcyI6ICR7cGVybWFuZW50X3ByZXNlcnZhdGlvbl9hcmVhc19hcHB9LAogICAgICAgICAgICAiQVBQSW5Db25zb2xpZGF0ZWRSdXJhbEFyZWEiOiAke2FwcF9pbl9jb25zb2xpZGF0ZWRfcnVyYWxfYXJlYX0sCiAgICAgICAgICAgICJBUFBJbk5hdGl2ZVZlZ2V0YXRpb25SZW1uYW50QXJlYSI6ICR7YXBwX2luX25hdGl2ZV92ZWdldGF0aW9uX3JlbW5hbnRfYXJlYX0sCiAgICAgICAgICAgICJSZXN0cmljdGVkVXNlQXJlYXMiOiAke3Jlc3RyaWN0ZWRfdXNlX2FyZWFzfSwKICAgICAgICAgICAgIkxlZ2FsUmVzZXJ2ZURlZmljaXRPckV4Y2VzcyI6ICR7bGVnYWxfcmVzZXJ2ZV9kZWZpY2l0X2V4Y2Vzc30sCiAgICAgICAgICAgICJMZWdhbFJlc2VydmVBcmVhVG9CZVJlc3RvcmVkIjogJHtsZWdhbF9yZXNlcnZlX2FyZWFfdG9fcmVjb21wb3NlfSwKICAgICAgICAgICAgIlBlcm1hbmVudFByZXNlcnZhdGlvbkFyZWFzVG9CZVJlc3RvcmVkIjogJHtwZXJtYW5lbnRfcHJlc2VydmF0aW9uX2FyZWFzX3RvX3JlY29tcG9zZX0sCiAgICAgICAgICAgICJSZXN0cmljdGVkVXNlQXJlYVRvQmVSZXN0b3JlZCI6ICR7cmVzdHJpY3RlZF91c2VfYXJlYV90b19yZWNvbXBvc2V9LAogICAgICAgICAgICAiRW1iYXJnZ2VkQXJlYURlc2NyaXB0aW9uIjogIiR7ZW1iYXJnb2VkX2FyZWFfZGVzY3JpcHRpb259IiwKICAgICAgICAgICAgIkVtYmFyZ2dlZEFyZWFQcm9jZXNzaW5nRGF0ZSI6ICIke2VtYmFyZ29lZF9hcmVhX3Byb2Nlc3NpbmdfZGF0ZX0iLAogICAgICAgICAgICAiRW1iYXJnZ2VkQXJlYU92ZXJsYXAiOiAke2VtYmFyZ29lZF9hcmVhX292ZXJsYXB9LAogICAgICAgICAgICAiRW1iYXJnZ2VkQXJlYU92ZXJsYXBQZXJjZW50YWdlIjogJHtlbWJhcmdvZWRfYXJlYV9vdmVybGFwX3BlcmNlbnRhZ2V9LAogICAgICAgICAgICAiQ29uc2VydmF0aW9uVW5pdERlc2NyaXB0aW9uIjogIiR7Y29uc2VydmF0aW9uX3VuaXRfZGVzY3JpcHRpb259IiwKICAgICAgICAgICAgIkNvbnNlcnZhdGlvblVuaXRQcm9jZXNzaW5nRGF0ZSI6ICIke2NvbnNlcnZhdGlvbl91bml0X3Byb2Nlc3NpbmdfZGF0ZX0iLAogICAgICAgICAgICAiQ29uc2VydmF0aW9uVW5pdE92ZXJsYXBBcmVhIjogJHtjb25zZXJ2YXRpb25fdW5pdF9vdmVybGFwX2FyZWF9LAogICAgICAgICAgICAiQ29uc2VydmF0aW9uVW5pdE92ZXJsYXBQZXJjZW50YWdlIjogJHtjb25zZXJ2YXRpb25fdW5pdF9vdmVybGFwX3BlcmNlbnRhZ2V9CiAgICAgICAgIH0KICAgICB9",
+    "keyManagerAppId": "CERTIFY_VC_SIGN_ED25519",
+    "keyManagerRefId": "ED25519_SIGN",
+    "signatureAlgo": "EdDSA",
+  "context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "credentialType": [
+    "VerifiableCredential",
+    "LandStatementCredential"
+  ],
+  "credentialFormat": "ldp_vc",
+  "didUrl": "did:web:mosip.github.io:inji-config:dev-int-inji:landregistry-ed25519#key-0",
+  "display": [{
+    "name": "STATEMENT OF THE STATUS OF INFORMATION DECLARED IN CAR",
+    "locale": "en",
+    "logo": {
+      "url": "https://mosip.github.io/inji-config/logos/agro-vertias-logo.png",
+      "alt_text": "CAR logo"
+    },
+	"background_image": { "uri": "https://mosip.github.io/inji-config/logos/agro-vertias-logo.png" },
+    "background_color": "#ebfaff",
+    "text_color": "#000000"
+  }],
+  "order": ["NumberOfCAR","RegistrationDate","LastModificationDate","RuralPropertyArea","Latitude","Longitude","Municipality","ExternalCondition","RegistrationStatus","PRACondition","GroundCoverage","NativeVegetationRemnantArea","ConsolidatedRuralArea","AdministrativeEasementArea","LegalReserveLocation","RegisteredLegalReserveArea","GeoreferencedLegalReserveArea","ApprovedUnregisteredLegalReserveArea","ProposedLegalReserveArea","TotalDeclaredLegalReserve","PermanentPreservationAreas","APPInConsolidatedRuralArea","APPInNativeVegetationRemnantArea","RestrictedUseAreas","LegalReserveDeficitOrExcess","LegalReserveAreaToBeRestored","PermanentPreservationAreasToBeRestored","RestrictedUseAreaToBeRestored","EmbarggedAreaDescription","EmbarggedAreaProcessingDate","EmbarggedAreaOverlap","EmbarggedAreaOverlapPercentage","ConservationUnitDescription","ConservationUnitProcessingDate","ConservationUnitOverlapArea","ConservationUnitOverlapPercentage"],
+  "scope": "land_statement_vc_ldp",
+  "cryptographic_binding_methods_supported": [
+    "did:jwk"
+  ],
+  "credential_signing_alg_values_supported": [
+    "Ed25519Signature2020"
+  ],
+  "proof_types_supported": {
+    "jwt": {
+      "proof_signing_alg_values_supported": [
+        "RS256",
+		"PS256",
+        "ES256"
+      ]
+    }
+  },
+  "doctype": null,
+  "credentialSubject": {
+    "NumberOfCAR": {
+      "display": [
+        {
+          "name": "CAR Registration Number",
+          "locale": "en"
+        }
+      ]
+    },
+    "RegistrationDate": {
+      "display": [
+        {
+          "name": "Registration Date",
+          "locale": "en"
+        }
+      ]
+    },
+    "LastModificationDate": {
+      "display": [
+        {
+          "name": "Last Modification Date",
+          "locale": "en"
+        }
+      ]
+    },
+    "RuralPropertyArea": {
+      "display": [
+        {
+          "name": "Rural Property Area",
+          "locale": "en"
+        }
+      ]
+    },
+    "Latitude": {
+      "display": [
+        {
+          "name": "Latitude",
+          "locale": "en"
+        }
+      ]
+    },
+    "Longitude": {
+      "display": [
+        {
+          "name": "Longitude",
+          "locale": "en"
+        }
+      ]
+    },
+    "Municipality": {
+      "display": [
+        {
+          "name": "Municipality",
+          "locale": "en"
+        }
+      ]
+    },
+    "ExternalCondition": {
+      "display": [
+        {
+          "name": "External Condition",
+          "locale": "en"
+        }
+      ]
+    },
+    "RegistrationStatus": {
+      "display": [
+        {
+          "name": "Registration Status",
+          "locale": "en"
+        }
+      ]
+    },
+    "PRACondition": {
+      "display": [
+        {
+          "name": "PRA Condition",
+          "locale": "en"
+        }
+      ]
+    },
+    "GroundCoverage": {
+      "display": [
+        {
+          "name": "Ground Coverage",
+          "locale": "en"
+        }
+      ]
+    },
+    "NativeVegetationRemnantArea": {
+      "display": [
+        {
+          "name": "Native Vegetation Remnant Area",
+          "locale": "en"
+        }
+      ]
+    },
+    "ConsolidatedRuralArea": {
+      "display": [
+        {
+          "name": "Consolidated Rural Area",
+          "locale": "en"
+        }
+      ]
+    },
+    "AdministrativeEasementArea": {
+      "display": [
+        {
+          "name": "Administrative Easement Area",
+          "locale": "en"
+        }
+      ]
+    },
+    "LegalReserveLocation": {
+      "display": [
+        {
+          "name": "Legal Reserve Location",
+          "locale": "en"
+        }
+      ]
+    },
+    "RegisteredLegalReserveArea": {
+      "display": [
+        {
+          "name": "Registered Legal Reserve Area",
+          "locale": "en"
+        }
+      ]
+    },
+    "GeoreferencedLegalReserveArea": {
+      "display": [
+        {
+          "name": "Georeferenced Legal Reserve Area",
+          "locale": "en"
+        }
+      ]
+    },
+    "ApprovedUnregisteredLegalReserveArea": {
+      "display": [
+        {
+          "name": "Approved Unregistered Legal Reserve Area",
+          "locale": "en"
+        }
+      ]
+    },
+    "ProposedLegalReserveArea": {
+      "display": [
+        {
+          "name": "Proposed Legal Reserve Area",
+          "locale": "en"
+        }
+      ]
+    },
+    "TotalDeclaredLegalReserve": {
+      "display": [
+        {
+          "name": "Total Declared Legal Reserve",
+          "locale": "en"
+        }
+      ]
+    },
+    "PermanentPreservationAreas": {
+      "display": [
+        {
+          "name": "Permanent Preservation Areas (APP)",
+          "locale": "en"
+        }
+      ]
+    },
+    "APPInConsolidatedRuralArea": {
+      "display": [
+        {
+          "name": "APP in Consolidated Rural Area",
+          "locale": "en"
+        }
+      ]
+    },
+    "APPInNativeVegetationRemnantArea": {
+      "display": [
+        {
+          "name": "APP in Native Vegetation Remnant Area",
+          "locale": "en"
+        }
+      ]
+    },
+    "RestrictedUseAreas": {
+      "display": [
+        {
+          "name": "Restricted Use Areas",
+          "locale": "en"
+        }
+      ]
+    },
+    "LegalReserveDeficitOrExcess": {
+      "display": [
+        {
+          "name": "Legal Reserve Deficit or Excess",
+          "locale": "en"
+        }
+      ]
+    },
+    "LegalReserveAreaToBeRestored": {
+      "display": [
+        {
+          "name": "Legal Reserve Area to Be Restored",
+          "locale": "en"
+        }
+      ]
+    },
+    "PermanentPreservationAreasToBeRestored": {
+      "display": [
+        {
+          "name": "Permanent Preservation Areas to Be Restored",
+          "locale": "en"
+        }
+      ]
+    },
+    "RestrictedUseAreaToBeRestored": {
+      "display": [
+        {
+          "name": "Restricted Use Area to Be Restored",
+          "locale": "en"
+        }
+      ]
+    },
+    "EmbarggedAreaDescription": {
+      "display": [
+        {
+          "name": "Embargoed Area Description",
+          "locale": "en"
+        }
+      ]
+    },
+    "EmbarggedAreaProcessingDate": {
+      "display": [
+        {
+          "name": "Embargoed Area Processing Date",
+          "locale": "en"
+        }
+      ]
+    },
+    "EmbarggedAreaOverlap": {
+      "display": [
+        {
+          "name": "Embargoed Area Overlap",
+          "locale": "en"
+        }
+      ]
+    },
+    "EmbarggedAreaOverlapPercentage": {
+      "display": [
+        {
+          "name": "Embargoed Area Overlap Percentage",
+          "locale": "en"
+        }
+      ]
+    },
+    "ConservationUnitDescription": {
+      "display": [
+        {
+          "name": "Conservation Unit Description",
+          "locale": "en"
+        }
+      ]
+    },
+    "ConservationUnitProcessingDate": {
+      "display": [
+        {
+          "name": "Conservation Unit Processing Date",
+          "locale": "en"
+        }
+      ]
+    },
+    "ConservationUnitOverlapArea": {
+      "display": [
+        {
+          "name": "Conservation Unit Overlap Area",
+          "locale": "en"
+        }
+      ]
+    },
+    "ConservationUnitOverlapPercentage": {
+      "display": [
+        {
+          "name": "Conservation Unit Overlap Percentage",
+          "locale": "en"
+        }
+      ]
+    }
+  },
+  "pluginConfigurations": null
+}
+
+
+
+
+
+
+
+
+MOSIP ID VC:
+{
+    "credentialConfigKeyId": "MOSIPVerifiableCredential",
+    "keyManagerAppId": "CERTIFY_VC_SIGN_ED25519",
+    "keyManagerRefId": "ED25519_SIGN",
+    "signatureAlgo": "EdDSA",
+  "context": [
+    "https://www.w3.org/2018/credentials/v1"
+  ],
+  "credentialType": [
+    "VerifiableCredential",
+    "MOSIPVerifiableCredential"
+  ],
+  "credentialFormat": "ldp_vc",
+  "didUrl": "did:web:likhitharl.github.io:vc:qainji#key-0",
+  "display": [{
+    "name": "'MOSIP National ID",
+    "locale": "en",
+    "logo": {
+      "url": "https://mosip.github.io/inji-config/logos/mosipid-logo.png",
+      "alt_text": "a square logo of a MOSIP"
+    },
+    "background_image": { "uri": "https://mosip.github.io/inji-config/vcbackground/default-background.png" },
+    "background_color": "#12107c",
+    "text_color": "#FFFFFF"
+  }],
+  "order": [
+    "fullName",
+    "phone",
+    "dateOfBirth",
+    "gender",
+    "residenceStatus",
+    "email",
+    "region",
+    "province",
+    "city",
+    "UIN",
+    "VID",
+    "postalCode"
+  ],
+  "scope": "mosip_identity_vc_ldp",
+  "cryptographic_binding_methods_supported": [
+    "did:jwk"
+  ],
+  "credential_signing_alg_values_supported": [
+    "Ed25519Signature2020"
+  ],
+  "proof_types_supported": {
+    "jwt": {
+      "proof_signing_alg_values_supported": [
+        "RS256",
+        "ES256"
+      ]
+    }
+  },
+  "doctype": null,
+  "credentialSubject": {
+    "fullName": {
+        "display": [
+            {
+                "name": "Full Name", 
+                "locale": "en"
+            }
+        ]
+    },
+    "phone": {
+        "display": [
+            {
+                "name": "Phone Number", 
+                "locale": "en"
+            }
+        ]
+    },
+    "dateOfBirth": {
+        "display": [
+            {
+                "name": "Date of Birth", 
+                "locale": "en"
+            }
+        ]
+    },
+    "gender": {
+        "display": [
+            {
+                "name": "Gender", 
+                "locale": "en"
+            }
+        ]
+    },
+    "residenceStatus": {
+        "display": [
+            {
+                "name": "Residence Status", 
+                "locale": "en"
+            }
+        ]
+    },
+    "email": {
+        "display": [
+            {
+                "name": "Email Id", 
+                "locale": "en"
+            }
+        ]
+    },
+    "region": {
+        "display": [
+            {
+                "name": "Region", 
+                "locale": "en"
+            }
+        ]
+    },
+    "province": {
+        "display": [
+            {
+                "name": "Province", 
+                "locale": "en"
+            }
+        ]
+    },
+    "city": {
+        "display": [
+            {
+                "name": "City", 
+                "locale": "en"
+            }
+        ]
+    },
+    "UIN": {
+        "display": [
+            {
+                "name": "UIN", 
+                "locale": "en"
+            }
+        ]
+    },
+    "VID": {
+        "display": [
+            {
+                "name": "VID", 
+                "locale": "en"
+            }
+        ]
+    },
+    "postalCode": {
+        "display": [
+            {
+                "name": "Postal Code", 
+                "locale": "en"
+            }
+        ]
+    }
+  },
+  "pluginConfigurations": null
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+Insurance VC:
+{
+    "credentialConfigKeyId": "InsuranceCredential",
+    "keyManagerAppId": "",
+    "keyManagerRefId": "",
+    "signatureAlgo": "",
+    "vcTemplate": "",
+  "context": [
+    "https://www.w3.org/2018/credentials/v1"
+  ],
+  "credentialType": [
+    "VerifiableCredential",
+    "InsuranceCredential"
+  ],
+  "credentialFormat": "ldp_vc",
+  "didUrl": "",
+  "display": [{
+    "name": "Insurance Credential",
+    "locale": "en",
+    "logo": {
+      "url": "https://mosip.github.io/inji-config/logos/mosipid-logo.png",
+      "alt_text": "a square logo of a MOSIP"
+    },
+    "background_image": { "uri": "https://mosip.github.io/inji-config/vcbackground/default-background.png" },
+    "background_color": "#12107c",
+    "text_color": "#FFFFFF"
+  }],
+  "order": [
+    "fullName",
+    "policyName",
+    "policyExpiresOn",
+    "policyIssuedOn",
+    "policyNumber",
+    "mobile",
+    "dob",
+    "gender",
+    "benefits",
+    "email"
+  ],
+  "scope": "sunbird_rc_insurance_vc_ldp",
+  "cryptographic_binding_methods_supported": [
+    "did:jwk"
+  ],
+  "credential_signing_alg_values_supported": [
+    "Ed25519Signature2020"
+  ],
+  "proof_types_supported": {
+    "jwt": {
+      "proof_signing_alg_values_supported": [
+        "RS256",
+        "ES256"
+      ]
+    }
+  },
+  "doctype": null,
+  "credentialSubject": {
+    "fullName": {
+        "display": [
+            {
+                "name": "Name", 
+                "locale": "en"
+            }
+        ]
+    },
+    "mobile": {
+        "display": [
+            {
+                "name": "Phone Number", 
+                "locale": "en"
+            }
+        ]
+    },
+    "dob": {
+        "display": [
+            {
+                "name": "Date of Birth", 
+                "locale": "en"
+            }
+        ]
+    },
+    "gender": {
+        "display": [
+            {
+                "name": "Gender", 
+                "locale": "en"
+            }
+        ]
+    },
+    "benefits": {
+        "display": [
+            {
+                "name": "Benefits", 
+                "locale": "en"
+            }
+        ]
+    },
+    "email": {
+        "display": [
+            {
+                "name": "Email Id", 
+                "locale": "en"
+            }
+        ]
+    },
+    "policyIssuedOn": {
+        "display": [
+            {
+                "name": "Policy Issued On", 
+                "locale": "en"
+            }
+        ]
+    },
+    "policyExpiresOn": {
+        "display": [
+            {
+                "name": "Policy Expires On", 
+                "locale": "en"
+            }
+        ]
+    },
+    "policyName": {
+        "display": [
+            {
+                "name": "Policy Name", 
+                "locale": "en"
+            }
+        ]
+    },
+    "policyNumber": {
+        "display": [
+            {
+                "name": "'Policy Number", 
+                "locale": "en"
+            }
+        ]
+    }
+  },
+  "pluginConfigurations": null
+}
+
+
+
+
+
+Life Insurance VC:
+{
+    "credentialConfigKeyId": "LifeInsuranceCredential",
+    "keyManagerAppId": "",
+    "keyManagerRefId": "",
+    "signatureAlgo": "",
+    "vcTemplate": "",
+    "context": [
+        "https://www.w3.org/2018/credentials/v1"
+    ],
+    "credentialType": [
+        "VerifiableCredential",
+        "LifeInsuranceCredential"
+    ],
+    "credentialFormat": "ldp_vc",
+    "didUrl": "",
+    "display": [{
+        "name": "Life Insurance Credential",
+        "locale": "en",
+        "logo": {
+        "url": "https://mosip.github.io/inji-config/logos/mosipid-logo.png",
+        "alt_text": "a square logo of a MOSIP"
+        },
+        "background_image": { "uri": "https://mosip.github.io/inji-config/vcbackground/default-background.png" },
+        "background_color": "#12107c",
+        "text_color": "#FFFFFF"
+    }],
+    "order": [
+        "fullName",
+        "policyName",
+        "policyExpiresOn",
+        "policyIssuedOn",
+        "policyNumber",
+        "mobile",
+        "dob",
+        "gender",
+        "benefits",
+        "email"
+    ],
+    "scope": "life_insurance_vc_ldp",
+    "cryptographic_binding_methods_supported": [
+        "did:jwk"
+    ],
+    "credential_signing_alg_values_supported": [
+        "Ed25519Signature2020"
+    ],
+    "proof_types_supported": {
+        "jwt": {
+        "proof_signing_alg_values_supported": [
+            "RS256",
+            "ES256"
+        ]
+        }
+    },
+    "doctype": null,
+    "credentialSubject": {
+        "fullName": {
+            "display": [
+                {
+                    "name": "Name", 
+                    "locale": "en"
+                }
+            ]
+        },
+        "mobile": {
+            "display": [
+                {
+                    "name": "Phone Number", 
+                    "locale": "en"
+                }
+            ]
+        },
+        "dob": {
+            "display": [
+                {
+                    "name": "Date of Birth", 
+                    "locale": "en"
+                }
+            ]
+        },
+        "gender": {
+            "display": [
+                {
+                    "name": "Gender", 
+                    "locale": "en"
+                }
+            ]
+        },
+        "benefits": {
+            "display": [
+                {
+                    "name": "Benefits", 
+                    "locale": "en"
+                }
+            ]
+        },
+        "email": {
+            "display": [
+                {
+                    "name": "Email Id", 
+                    "locale": "en"
+                }
+            ]
+        },
+        "policyIssuedOn": {
+            "display": [
+                {
+                    "name": "Policy Issued On", 
+                    "locale": "en"
+                }
+            ]
+        },
+        "policyExpiresOn": {
+            "display": [
+                {
+                    "name": "Policy Expires On", 
+                    "locale": "en"
+                }
+            ]
+        },
+        "policyName": {
+            "display": [
+                {
+                    "name": "Policy Name", 
+                    "locale": "en"
+                }
+            ]
+        },
+        "policyNumber": {
+            "display": [
+                {
+                    "name": "'Policy Number", 
+                    "locale": "en"
+                }
+            ]
+        }
+    },
+    "pluginConfigurations": null
+}
