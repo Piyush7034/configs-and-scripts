@@ -12,7 +12,7 @@
     "MockVerifiableCredential"
   ],
   "credentialFormat": "ldp_vc",
-  "didUrl": "did:web:mosip.github.io:inji-config:dev2:mock-identity-ecr1#key-0",
+  "didUrl": "did:web:mosip.github.io:inji-config:dev-int-inji:mock-identity-ecr1#key-0",
   "display": [{
     "name": "Mock Verifiable Credential",
     "locale": "en",
@@ -41,7 +41,7 @@
     "did:jwk"
   ],
   "credential_signing_alg_values_supported": [
-    "Ed25519Signature2020"
+    "EcdsaSecp256r1Signature2019"
   ],
   "proof_types_supported": {
     "jwt": {

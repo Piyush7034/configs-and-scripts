@@ -5,7 +5,8 @@
     "keyManagerRefId": "ED25519_SIGN",
     "signatureAlgo": "EdDSA",
   "context": [
-    "https://www.w3.org/ns/credentials/v2"
+    "https://www.w3.org/ns/credentials/v2",
+    "https://mosip.github.io/inji-config/contexts/landregistry-registration-receipt-context.json"
   ],
   "credentialType": [
     "VerifiableCredential",
