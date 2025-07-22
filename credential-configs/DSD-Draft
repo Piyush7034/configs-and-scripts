@@ -1,0 +1,71 @@
+Env: dev-int-inji
+
+Purpose: To deploy inji-certify to dev-int-inji env
+move mosipdev/inji-certify-with-plugins:release-0.12.x
+to mosipdev2/inji-certify-with-plugins:release-0.12.x
+
+image to be used: inji-certify: mosipdev2/inji-certify-with-plugins:release-0.12.x
+
+Run this upgrade query for all the databases:
+ALTER TABLE certify.credential_config
+ADD COLUMN signature_crypto_suite VARCHAR(128)
+ADD COLUMN credential_status_purpose TEXT[] DEFAULT 'Ed25519Signature2020';
+
+Name Space: mock-identity-usecase
+Certify: mosipdev2/inji-certify-with-plugins:release-0.12.x
+Artifactory: NA
+Note: Below property to be added to the yaml file of deployment:
+            containers:             env:                 - name: install_hsm_client                     value: 'true'    
+active spring profile -> default, mock-identity
+spring_config_label_env → release-0.10.x
+Plugin in to be used : mock-certify-plugin 
+Database: inji_certify_mock
+
+
+Name Space:  mosipid-identity-usecase :
+mosipdev2/inji-certify-with-plugins:release-0.12.x
+Artifactory: NA
+Note: Below property to be added to the yaml file of deployment:
+            containers:             env:                 - name: install_hsm_client                     value: 'true'    
+active spring profile -> default, mosipid-identity
+spring_config_label_env -> release-0.10.x
+Plugin in to be used : mosip-identity-certify-plugin
+Database: inji_certify_mosipid
+
+
+
+Name Space: sunbirdrc-insurance-usecase
+mosipdev2/inji-certify-with-plugins:release-0.12.x
+Artifactory: NA
+Note: Below property to be added to the yaml file of deployment:
+            containers:             env:                 - name: install_hsm_client                     value: 'true'    
+active spring profile -> default, sunbird-insurance
+spring_config_label_env → release-0.10.x
+Plugin to be used : sunbird-rc-certify-integration-impl plugin
+Database: inji_certify_insurance
+
+
+Name Space: landregistry-usecase
+mosipdev2/inji-certify-with-plugins:release-0.12.x
+Artifactory: NA
+Note: Below property to be added to the yaml file of deployment:
+            containers:             env:                 - name: install_hsm_client                     value: 'true'    
+active spring profile -> default, postgres-landregistry
+spring_config_label_env -> release-0.10.x
+Plugin to be used : postgrtes_dataprovider_plugin
+Database: inji_certify_landregistry
+
+
+Name Space: mock-mdl-usecase
+mosipdev2/inji-certify-with-plugins:release-0.12.x
+Artifactory: NA
+Note: Below property to be added to the yaml file of deployment:
+            containers:             env:                 - name: install_hsm_client                     value: 'true'    
+active spring profile -> default, mock-mdl
+spring_config_label_env -> release-0.10.x
+Plugin to be used : mock-certify-plugin
+Database: inji_certify_mdl
+
+
+PR for config-changes:
+https://github.com/mosip/inji-config/pull/1310 

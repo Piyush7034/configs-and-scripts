@@ -1,0 +1,3 @@
+ALTER TABLE certify.credential_config
+ADD COLUMN signature_crypto_suite VARCHAR(128)
+ADD COLUMN credential_status_purpose TEXT[];
