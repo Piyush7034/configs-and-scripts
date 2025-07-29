@@ -13,8 +13,8 @@
     "LandStatementCredential"
   ],
   "credentialFormat": "ldp_vc",
-  "didUrl": "did:web:mosip.github.io:inji-config:dev-int-inji:landregistry-ed25519#key-0",
-  "display": [{
+  "didUrl": "did:web:mosip.github.io:inji-config:dev-int-inji:landregistry-ed25519",
+  "metaDataDisplay": [{
     "name": "STATEMENT OF THE STATUS OF INFORMATION DECLARED IN CAR",
     "locale": "en",
     "logo": {
@@ -25,25 +25,10 @@
     "background_color": "#ebfaff",
     "text_color": "#000000"
   }],
-  "order": ["NumberOfCAR","RegistrationDate","LastModificationDate","RuralPropertyArea","Latitude","Longitude","Municipality","ExternalCondition","RegistrationStatus","PRACondition","GroundCoverage","NativeVegetationRemnantArea","ConsolidatedRuralArea","AdministrativeEasementArea","LegalReserveLocation","RegisteredLegalReserveArea","GeoreferencedLegalReserveArea","ApprovedUnregisteredLegalReserveArea","ProposedLegalReserveArea","TotalDeclaredLegalReserve","PermanentPreservationAreas","APPInConsolidatedRuralArea","APPInNativeVegetationRemnantArea","RestrictedUseAreas","LegalReserveDeficitOrExcess","LegalReserveAreaToBeRestored","PermanentPreservationAreasToBeRestored","RestrictedUseAreaToBeRestored","EmbarggedAreaDescription","EmbarggedAreaProcessingDate","EmbarggedAreaOverlap","EmbarggedAreaOverlapPercentage","ConservationUnitDescription","ConservationUnitProcessingDate","ConservationUnitOverlapArea","ConservationUnitOverlapPercentage"],
+  "displayOrder": ["NumberOfCAR","RegistrationDate","LastModificationDate","RuralPropertyArea","Latitude","Longitude","Municipality","ExternalCondition","RegistrationStatus","PRACondition","GroundCoverage","NativeVegetationRemnantArea","ConsolidatedRuralArea","AdministrativeEasementArea","LegalReserveLocation","RegisteredLegalReserveArea","GeoreferencedLegalReserveArea","ApprovedUnregisteredLegalReserveArea","ProposedLegalReserveArea","TotalDeclaredLegalReserve","PermanentPreservationAreas","APPInConsolidatedRuralArea","APPInNativeVegetationRemnantArea","RestrictedUseAreas","LegalReserveDeficitOrExcess","LegalReserveAreaToBeRestored","PermanentPreservationAreasToBeRestored","RestrictedUseAreaToBeRestored","EmbarggedAreaDescription","EmbarggedAreaProcessingDate","EmbarggedAreaOverlap","EmbarggedAreaOverlapPercentage","ConservationUnitDescription","ConservationUnitProcessingDate","ConservationUnitOverlapArea","ConservationUnitOverlapPercentage"],
   "scope": "land_statement_vc_ldp",
-  "cryptographic_binding_methods_supported": [
-    "did:jwk"
-  ],
-  "credential_signing_alg_values_supported": [
-    "Ed25519Signature2020"
-  ],
-  "proof_types_supported": {
-    "jwt": {
-      "proof_signing_alg_values_supported": [
-        "RS256",
-		"PS256",
-        "ES256"
-      ]
-    }
-  },
   "doctype": null,
-  "credentialSubject": {
+  "credentialSubjectDefinition": {
     "NumberOfCAR": {
       "display": [
         {

@@ -1,19 +1,21 @@
 {
     "credentialConfigKeyId": "MockVerifiableCredential_VCDM2",
     "vcTemplate": "ewogICAgICJAY29udGV4dCI6IFsKICAgICAgICAgICAgICJodHRwczovL3d3dy53My5vcmcvbnMvY3JlZGVudGlhbHMvdjIiLAogICAgICAgICAgICAgImh0dHBzOi8vYXBpLnJlbGVhc2VkLm1vc2lwLm5ldC8ud2VsbC1rbm93bi9tb3NpcC1pZGEtY29udGV4dC5qc29uIiwKCSAgICAgImh0dHBzOi8vdzNpZC5vcmcvc2VjdXJpdHkvc3VpdGVzL2VkMjU1MTktMjAyMC92MSIKICAgICAgICAgXSwKICAgICAgICAgImlzc3VlciI6ICIke19pc3N1ZXJ9IiwKICAgICAgICAgInR5cGUiOiBbIlZlcmlmaWFibGVDcmVkZW50aWFsIiwgIk1vY2tWZXJpZmlhYmxlQ3JlZGVudGlhbCJdLAogICAgICAgICAidmFsaWRGcm9tIjogIiR7dmFsaWRGcm9tfSIsCiAgICAgICAgICJ2YWxpZFVudGlsIjogIiR7dmFsaWRVbnRpbH0iLAogICAgICAgICAiY3JlZGVudGlhbFN1YmplY3QiOiB7CiAgICAgICAgICAgICJpZCI6ICIke19ob2xkZXJJZH0iLAogICAgICAgICAgICAiZ2VuZGVyIjogJHtnZW5kZXJ9LAogICAgICAgICAgICAicG9zdGFsQ29kZSI6ICR7cG9zdGFsQ29kZX0sCiAgICAgICAgICAgICJmdWxsTmFtZSI6ICR7ZnVsbE5hbWV9LAogICAgICAgICAgICAiZGF0ZU9mQmlydGgiOiAiJHtkYXRlT2ZCaXJ0aH0iLAogICAgICAgICAgICAicGhvbmUiOiAiJHtwaG9uZX0iLAogICAgICAgICAgICAicHJvdmluY2UiOiAke3Byb3ZpbmNlfSwKICAgICAgICAgICAgInJlZ2lvbiI6ICR7cmVnaW9ufSwKICAgICAgICAgICAgIlVJTiI6ICR7VUlOfSwKCSAgICAiVklEIjogJHtVSU59LAogICAgICAgICAgICAiZW1haWwiOiAiJHtlbWFpbH0iCiAgICAgICAgIH0KICAgICB9",
-    "keyManagerAppId": "CERTIFY_VC_SIGN_EC_R1",
-    "keyManagerRefId": "EC_SECP256R1_SIGN",
-    "signatureAlgo": "ES256",
-  "context": [
-    "https://www.w3.org/ns/credentials/v2"
+    "keyManagerAppId": "CERTIFY_VC_SIGN_ED25519",
+    "keyManagerRefId": "ED25519_SIGN",
+    "signatureAlgo": "EdDSA",
+    "signatureCryptoSuite": "Ed25519Signature2020",
+  "contextURLs": [
+    "https://www.w3.org/ns/credentials/v2",
+    "https://api.released.mosip.net/.well-known/mosip-ida-context.json"
   ],
-  "credentialType": [
+  "credentialTypes": [
     "VerifiableCredential",
     "MockVerifiableCredential"
   ],
   "credentialFormat": "ldp_vc",
-  "didUrl": "did:web:mosip.github.io:inji-config:dev-int-inji:mock-identity-ecr1#key-0",
-  "display": [{
+  "didUrl": "did:web:mosip.github.io:inji-config:dev-int-inji:mock-identity-ecr1",
+  "metaDataDisplay": [{
     "name": "Mock Verifiable Credential",
     "locale": "en",
     "logo": {
@@ -24,7 +26,7 @@
     "background_color": "#12107c",
     "text_color": "#FFFFFF"
   }],
-  "order": [
+  "displayOrder": [
     "fullName",
     "phone",
     "dateOfBirth",
@@ -37,22 +39,8 @@
     "postalCode"
   ],
   "scope": "mock_identity_vc_ldp",
-  "cryptographic_binding_methods_supported": [
-    "did:jwk"
-  ],
-  "credential_signing_alg_values_supported": [
-    "EcdsaSecp256r1Signature2019"
-  ],
-  "proof_types_supported": {
-    "jwt": {
-      "proof_signing_alg_values_supported": [
-        "RS256",
-        "ES256"
-      ]
-    }
-  },
   "doctype": null,
-  "credentialSubject": {
+  "credentialSubjectDefinition": {
     "fullName": {
         "display": [
             {

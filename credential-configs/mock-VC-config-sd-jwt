@@ -1,21 +1,13 @@
 {
     "credentialConfigKeyId": "MockVerifiableCredential_SD_JWT",
     "vcTemplate": "ewogICAgICJAY29udGV4dCI6IFsKICAgICAgICAgICAgICJodHRwczovL3d3dy53My5vcmcvMjAxOC9jcmVkZW50aWFscy92MSIsCiAgICAgICAgICAgICAiaHR0cHM6Ly92aGFyc2guZ2l0aHViLmlvL0RJRC9tb2NrLWNvbnRleHQuanNvbiIKICAgICAgICAgXSwKICAgICAgICAgImlzc3VlciI6ICIke19pc3N1ZXJ9IiwKICAgICAgICAgInR5cGUiOiBbIlZlcmlmaWFibGVDcmVkZW50aWFsIiwgIk1vY2tWZXJpZmlhYmxlQ3JlZGVudGlhbCJdLAogICAgICAgICAiaXNzdWFuY2VEYXRlIjogIiR7dmFsaWRGcm9tfSIsCiAgICAgICAgICJleHBpcmF0aW9uRGF0ZSI6ICIke3ZhbGlkVW50aWx9IiwKICAgICAgICAgImNyZWRlbnRpYWxTdWJqZWN0IjogewogICAgICAgICAgICAiaWQiOiAiJHtfaG9sZGVySWR9IiwKICAgICAgICAgICAgImdlbmRlciI6ICR7Z2VuZGVyfSwKICAgICAgICAgICAgInBvc3RhbENvZGUiOiAke3Bvc3RhbENvZGV9LAogICAgICAgICAgICAiZnVsbE5hbWUiOiAke2Z1bGxOYW1lfSwKICAgICAgICAgICAgImRhdGVPZkJpcnRoIjogIiR7ZGF0ZU9mQmlydGh9IiwKICAgICAgICAgICAgInBob25lIjogIiR7cGhvbmV9IiwKICAgICAgICAgICAgInByb3ZpbmNlIjogJHtwcm92aW5jZX0sCiAgICAgICAgICAgICJyZWdpb24iOiAke3JlZ2lvbn0sCiAgICAgICAgICAgICJVSU4iOiAke1VJTn0sCgkgICAgIlZJRCI6ICR7VUlOfSwKICAgICAgICAgICAgImVtYWlsIjogIiR7ZW1haWx9IgogICAgICAgICB9CiAgICAgfQ==",
-    "keyManagerAppId": "CERTIFY_VC_SIGN_EC_R1",
-    "keyManagerRefId": "EC_SECP256R1_SIGN",
-    "signatureAlgo": "ES256",
-    "vct": "MockVerifiableCredential_SD_JWT",
-    "context": [
-        "https://www.w3.org/2018/credentials/v1",
-        "https://api.released.mosip.net/.well-known/mosip-ida-context.json"
-    ],
-    "credentialType": [
-        "VerifiableCredential",
-        "MockVerifiableCredential"
-    ],
+    "keyManagerAppId": "CERTIFY_VC_SIGN_EC_K1",
+    "keyManagerRefId": "EC_SECP256K1_SIGN",
+    "signatureAlgo": "ES256K",
+    "sdJwtVct": "MockVerifiableCredential_SD_JWT",
     "credentialFormat": "vc+sd-jwt",
-    "didUrl": "did:web:mosip.github.io:inji-config:dev-int-inji:mock-identity-ecr1#key-0",
-    "display": [{
+    "didUrl": "did:web:mosip.github.io:inji-config:dev-int-inji:mock-identity-ecr1",
+    "metaDataDisplay": [{
         "name": "Mock Verifiable Credential",
         "locale": "en",
         "logo": {
@@ -26,7 +18,7 @@
         "background_color": "#12107c",
         "text_color": "#FFFFFF"
     }],
-    "order": [
+    "displayOrder": [
         "fullName",
         "phone",
         "dateOfBirth",
@@ -39,22 +31,8 @@
         "postalCode"
     ],
     "scope": "mock_identity_vc_ldp",
-    "cryptographic_binding_methods_supported": [
-        "did:jwk"
-    ],
-    "credential_signing_alg_values_supported": [
-        "Ed25519Signature2020"
-    ],
-    "proof_types_supported": {
-        "jwt": {
-        "proof_signing_alg_values_supported": [
-            "RS256",
-            "ES256"
-        ]
-        }
-    },
     "doctype": null,
-    "claims": {
+    "sdJwtClaims": {
         "fullName": {
             "display": [
                 {

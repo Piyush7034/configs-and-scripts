@@ -1,6 +1,6 @@
 INSERT INTO certify.credential_template (context, credential_type, template, cr_dtimes, upd_dtimes)
 VALUES (
-    'https://www.w3.org/2018/credentials/v1',
+    'https://mosip.github.io/inji-config/contexts/landregistry-registration-receipt-context.json,https://www.w3.org/2018/credentials/v1',
     'RegistrationReceiptCredential,VerifiableCredential',
     '{
          "@context": [
@@ -37,11 +37,11 @@ VALUES (
             "RestrictedUseArea": ${restricted_use_area}
          }
      }
-', '2024-10-24 12:32:38.065994', NULL);
+', now(), NULL);
 
 INSERT INTO certify.credential_template (context, credential_type, template, cr_dtimes, upd_dtimes)
 VALUES (
-    'https://www.w3.org/2018/credentials/v1',
+    'https://mosip.github.io/inji-config/contexts/landregistry-statement-context.json,https://www.w3.org/2018/credentials/v1',
     'LandStatementCredential,VerifiableCredential',
     '{
          "@context": [
@@ -95,14 +95,14 @@ VALUES (
             "ConservationUnitOverlapPercentage": ${conservation_unit_overlap_percentage}
          }
      }
-', '2024-10-24 12:32:38.065994', NULL);
+', now(), NULL);
 
 
 
 
 INSERT INTO certify.credential_template (context, credential_type, template, cr_dtimes, upd_dtimes)
 VALUES (
-    'https://www.w3.org/ns/credentials/v2',
+    'https://mosip.github.io/inji-config/contexts/landregistry-registration-receipt-context.json,https://www.w3.org/ns/credentials/v2',
     'RegistrationReceiptCredential,VerifiableCredential',
     '{
          "@context": [
@@ -139,11 +139,11 @@ VALUES (
             "RestrictedUseArea": ${restricted_use_area}
          }
      }
-', '2024-10-24 12:32:38.065994', NULL);
+', now(), NULL);
 
 INSERT INTO certify.credential_template (context, credential_type, template, cr_dtimes, upd_dtimes)
 VALUES (
-    'https://www.w3.org/ns/credentials/v2',
+    'https://mosip.github.io/inji-config/contexts/landregistry-statement-context.json,https://www.w3.org/ns/credentials/v2',
     'LandStatementCredential,VerifiableCredential',
     '{
          "@context": [
@@ -197,4 +197,4 @@ VALUES (
             "ConservationUnitOverlapPercentage": ${conservation_unit_overlap_percentage}
          }
      }
-', '2024-10-24 12:32:38.065994', NULL);
+', now(), NULL);
