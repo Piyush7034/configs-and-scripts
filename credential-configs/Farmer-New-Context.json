@@ -17,51 +17,27 @@
         "dateOfBirth": "schema:birthDate",
         "address": {
             "@id": "schema:address",
-            "@type": "schema:PostalAddress",
             "@context": {
-                "village": {
-                    "@id": "schema:addressLocality",
-                    "@type": "schema:Text"
-                },
-                "district": {
-                    "@id": "schema:addressRegion",
-                    "@type": "schema:Text"
-                },
-                "state": {
-                    "@id": "schema:addressRegion",
-                    "@type": "schema:Text"
-                }
+                "village": "schema:addressLocality",
+                "district": "schema:addressRegion",
+                "state": "schema:addressRegion"
             }
         },
         "primaryCommodity": "schema:productSupported",
         "totalLandArea": {
             "@id": "schema:area",
-            "@type": "schema:QuantitativeValue",
             "@context": {
-                "value": {
-                    "@id": "schema:value",
-                    "@type": "schema:Number"
-                },
-                "unit": {
-                    "@id": "schema:unitText",
-                    "@type": "schema:Text"
-                }
+                "value": "schema:value",
+                "unit": "schema:unitText"
             }
         },
         "ownershipType": "schema:Text",
         "crops": {
             "@id": "schema:productSupported",
-            "@type": "@id",
             "@container": "@list",
             "@context": {
-                "cropName": {
-                    "@id": "schema:name",
-                    "@type": "schema:Text"
-                },
-                "season": {
-                    "@id": "schema:temporalCoverage",
-                    "@type": "schema:Text"
-                }
+                "cropName": "schema:name",
+                "season": "schema:temporalCoverage"
             }
         }
     }
