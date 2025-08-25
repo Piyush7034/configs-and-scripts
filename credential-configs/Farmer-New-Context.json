@@ -1,0 +1,68 @@
+{
+    "@context": {
+        "@version": 1.1,
+        "@protected": true,
+        "type": "@type",
+        "schema": "https://schema.org/",
+        "FarmerCredential": {
+            "@id": "https://piyush7034.github.io/my-files/farmer-schema-context.json#FarmerCredential"
+        },
+        "farmerDetails": "schema:Thing",
+        "authority": "schema:Text",
+        "idType": "schema:Text",
+        "fullName": "schema:name",
+        "farmerId": "schema:Text",
+        "gender": "schema:gender",
+        "phoneNumber": "schema:telephone",
+        "dateOfBirth": "schema:birthDate",
+        "address": {
+            "@id": "schema:address",
+            "@type": "schema:PostalAddress",
+            "@context": {
+                "village": {
+                    "@id": "schema:addressLocality",
+                    "@type": "schema:Text"
+                },
+                "district": {
+                    "@id": "schema:addressRegion",
+                    "@type": "schema:Text"
+                },
+                "state": {
+                    "@id": "schema:addressRegion",
+                    "@type": "schema:Text"
+                }
+            }
+        },
+        "primaryCommodity": "schema:productSupported",
+        "totalLandArea": {
+            "@id": "schema:area",
+            "@type": "schema:QuantitativeValue",
+            "@context": {
+                "value": {
+                    "@id": "schema:value",
+                    "@type": "schema:Number"
+                },
+                "unit": {
+                    "@id": "schema:unitText",
+                    "@type": "schema:Text"
+                }
+            }
+        },
+        "ownershipType": "schema:Text",
+        "crops": {
+            "@id": "schema:productSupported",
+            "@type": "@id",
+            "@container": "@list",
+            "@context": {
+                "cropName": {
+                    "@id": "schema:name",
+                    "@type": "schema:Text"
+                },
+                "season": {
+                    "@id": "schema:temporalCoverage",
+                    "@type": "schema:Text"
+                }
+            }
+        }
+    }
+}
