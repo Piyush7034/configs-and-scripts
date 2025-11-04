@@ -4,15 +4,17 @@
     "keyManagerAppId": "CERTIFY_VC_SIGN_EC_R1",
     "keyManagerRefId": "EC_SECP256R1_SIGN",
     "signatureAlgo": "ES256",
+    "signatureCryptoSuite": "EcdsaSecp256r1Signature2019",
   "contextURLs": [
-    "https://www.w3.org/2018/credentials/v1"
+    "https://www.w3.org/2018/credentials/v1",
+    "https://api.released.mosip.net/.well-known/mosip-ida-context.json"
   ],
   "credentialTypes": [
     "VerifiableCredential",
     "MockVerifiableCredential"
   ],
   "credentialFormat": "ldp_vc",
-  "didUrl": "did:web:mosip.github.io:inji-config:dev-int-inji:mock-identity-ecr1",
+  "didUrl": "did:web:mosip.github.io:inji-config:released:mock-identity",
   "metaDataDisplay": [{
     "name": "Mock Verifiable Credential",
     "locale": "en",
@@ -37,7 +39,6 @@
     "postalCode"
   ],
   "scope": "mock_identity_vc_ldp",
-  "doctype": null,
   "credentialSubjectDefinition": {
     "fullName": {
         "display": [

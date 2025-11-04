@@ -4,16 +4,17 @@
     "keyManagerAppId": "CERTIFY_VC_SIGN_ED25519",
     "keyManagerRefId": "ED25519_SIGN",
     "signatureAlgo": "EdDSA",
-  "context": [
+    "signatureCryptoSuite": "Ed25519Signature2020",
+  "contextURLs": [
     "https://www.w3.org/2018/credentials/v1",
     "https://mosip.github.io/inji-config/contexts/landregistry-statement-context.json"
   ],
-  "credentialType": [
+  "credentialTypes": [
     "VerifiableCredential",
     "LandStatementCredential"
   ],
   "credentialFormat": "ldp_vc",
-  "didUrl": "did:web:mosip.github.io:inji-config:dev-int-inji:landregistry-ed25519",
+  "didUrl": "did:web:mosip.github.io:inji-config:released:landregistry",
   "metaDataDisplay": [{
     "name": "STATEMENT OF THE STATUS OF INFORMATION DECLARED IN CAR",
     "locale": "en",
@@ -27,7 +28,6 @@
   }],
   "displayOrder": ["NumberOfCAR","RegistrationDate","LastModificationDate","RuralPropertyArea","Latitude","Longitude","Municipality","ExternalCondition","RegistrationStatus","PRACondition","GroundCoverage","NativeVegetationRemnantArea","ConsolidatedRuralArea","AdministrativeEasementArea","LegalReserveLocation","RegisteredLegalReserveArea","GeoreferencedLegalReserveArea","ApprovedUnregisteredLegalReserveArea","ProposedLegalReserveArea","TotalDeclaredLegalReserve","PermanentPreservationAreas","APPInConsolidatedRuralArea","APPInNativeVegetationRemnantArea","RestrictedUseAreas","LegalReserveDeficitOrExcess","LegalReserveAreaToBeRestored","PermanentPreservationAreasToBeRestored","RestrictedUseAreaToBeRestored","EmbarggedAreaDescription","EmbarggedAreaProcessingDate","EmbarggedAreaOverlap","EmbarggedAreaOverlapPercentage","ConservationUnitDescription","ConservationUnitProcessingDate","ConservationUnitOverlapArea","ConservationUnitOverlapPercentage"],
   "scope": "land_statement_vc_ldp",
-  "doctype": null,
   "credentialSubjectDefinition": {
     "NumberOfCAR": {
       "display": [

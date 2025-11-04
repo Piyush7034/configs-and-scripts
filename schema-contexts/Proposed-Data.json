@@ -1,0 +1,48 @@
+{
+  "@context": [
+    "https://www.w3.org/2018/credentials/v1",
+    "https://mosip.github.io/inji-config/contexts/farmer-context.json"
+  ],
+  "type": ["VerifiableCredential", "FarmerCredential"],
+  "issuer": "did:example:12345",
+  "issuanceDate": "2025-01-10T00:00:00Z",
+  "validUntil": "2026-01-10T00:00:00Z",
+  "credentialSubject": {
+    "authority": "Agro Veritas Authority",
+    "idType": "Farmer ID",
+    "fullName": "Ravi Kumar",
+    "farmerId": "FARMER-123",
+    "gender": "Male",
+    "phoneNumber": "+91-9876543210",
+    "dateOfBirth": "1985-03-15",
+
+    "address": {
+      "type": "PostalAddress",
+      "village": "Mandya",
+      "district": "Mandya",
+      "state": "Karnataka"
+    },
+
+    "farm": {
+      "type": "Farm",
+      "primaryCommodity": "Paddy",
+      "totalLandArea": {
+        "value": 2.5,
+        "unit": "hectares"
+      },
+      "ownershipType": "Owned",
+      "crops": [
+        {
+          "type": "Crop",
+          "cropName": "Paddy",
+          "season": "Kharif"
+        },
+        {
+          "type": "Crop",
+          "cropName": "Wheat",
+          "season": "Rabi"
+        }
+      ]
+    }
+  }
+}

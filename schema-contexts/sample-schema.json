@@ -1,0 +1,39 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "schema": "https://schema.org/",
+    "vc": "https://www.w3.org/2018/credentials#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+
+    "FarmerCredential": "https://mosip.github.io/inji-config/contexts/farmer-context.json#FarmerCredential",
+    "Farm": "https://mosip.github.io/inji-config/contexts/farmer-context.json#Farm",
+    "SubsidyScheme": "https://mosip.github.io/inji-config/contexts/farmer-context.json#SubsidyScheme",
+
+    "id": "@id",
+    "type": "@type",
+
+    "fullName": "schema:name",
+    "dob": { "@id": "schema:birthDate", "@type": "xsd:date" },
+    "gender": "schema:gender",
+    "contactNumber": "schema:telephone",
+    "email": "schema:email",
+
+    "address": "schema:address",
+    "locality": "schema:addressLocality",
+    "district": "schema:addressRegion",
+    "state": "schema:addressRegion",
+    "country": "schema:addressCountry",
+
+    "farm": { "@id": "schema:owns", "@type": "@id" },
+    "farmId": "schema:identifier",
+    "areaInHectares": "schema:area",
+    "cropType": "schema:crop",
+    "ownershipType": "schema:ownershipFundingInfo",
+
+    "subsidy": { "@id": "schema:hasOfferCatalog", "@type": "@id" },
+    "schemeName": "schema:name",
+    "schemeId": "schema:identifier",
+    "amountReceived": { "@id": "schema:amount", "@type": "xsd:decimal" },
+    "lastDisbursedOn": { "@id": "schema:dateReceived", "@type": "xsd:date" }
+  }
+}

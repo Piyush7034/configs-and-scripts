@@ -4,6 +4,7 @@
     "keyManagerAppId": "CERTIFY_VC_SIGN_ED25519",
     "keyManagerRefId": "ED25519_SIGN",
     "signatureAlgo": "EdDSA",
+    "signatureCryptoSuite": "Ed25519Signature2020",
   "contextURLs": [
     "https://www.w3.org/ns/credentials/v2",
     "https://mosip.github.io/inji-config/contexts/landregistry-registration-receipt-context.json"
@@ -181,6 +182,5 @@
         }
       ]
     }
-  },
-  "pluginConfigurations": null
+  }
 }

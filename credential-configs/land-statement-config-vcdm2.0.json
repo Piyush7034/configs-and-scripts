@@ -4,6 +4,7 @@
     "keyManagerAppId": "CERTIFY_VC_SIGN_ED25519",
     "keyManagerRefId": "ED25519_SIGN",
     "signatureAlgo": "EdDSA",
+    "signatureCryptoSuite": "Ed25519Signature2020",
   "contextURLs": [
     "https://www.w3.org/ns/credentials/v2",
     "https://mosip.github.io/inji-config/contexts/landregistry-statement-context.json"
@@ -13,7 +14,7 @@
     "LandStatementCredential"
   ],
   "credentialFormat": "ldp_vc",
-  "didUrl": "did:web:mosip.github.io:inji-config:dev-int-inji:landregistry-ed25519#key-0",
+  "didUrl": "did:web:mosip.github.io:inji-config:released:landregistry",
   "metaDataDisplay": [{
     "name": "STATEMENT OF THE STATUS OF INFORMATION DECLARED IN CAR",
     "locale": "en",

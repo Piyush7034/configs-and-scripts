@@ -1,38 +1,89 @@
 {
     "@context": {
-        "@version": 1.1,
-        "@protected": true,
-        "type": "@type",
-        "schema": "https://schema.org/",
-        "FarmerCredential": {
-            "@id": "https://piyush7034.github.io/my-files/farmer-schema-context.json#FarmerCredential"
-        },
-        "farmerDetails": "schema:Thing",
-        "authority": "schema:Text",
-        "idType": "schema:Text",
-        "fullName": "schema:name",
-        "farmerId": "schema:Text",
-        "gender": "schema:gender",
-        "phoneNumber": "schema:telephone",
-        "dateOfBirth": "schema:birthDate",
-        "address": "schema:address",
-        "village": "schema:addressLocality",
-        "district": "schema:addressRegion",
-        "state": "schema:addressRegion",
-        "primaryCommodity": "schema:productSupported",
-        "totalLandArea": {
-            "@id": "schema:area",
-            "@context": {
-                "value": "schema:value",
-                "unit": "schema:unitText"
-            }
-        },
-        "ownershipType": "schema:Text",
-        "crops": {
-            "@id": "schema:productSupported",
-            "@container": "@list"
-        },
-        "cropName": "schema:name",
-        "season": "schema:temporalCoverage"
+      "@version": 1.1,
+      "@protected": true,
+      "type": "@type",
+      "schema": "https://schema.org/",
+      "FarmerCredential": {
+        "@id": "https://piyush7034.github.io/my-files/farmer-schema-context.json#FarmerCredential"
+      },
+      "farmerDetails": "schema:Thing",
+      "authority": {
+        "@id": "schema:Text",
+        "@container": "@language"
+      },
+      "idType": {
+        "@id": "schema:Text",
+        "@container": "@language"
+      },
+      "fullName": {
+        "@id": "schema:name",
+        "@container": "@list",
+        "@context": {
+          "language": "schema:inLanguage",
+          "value": "schema:Text"
+        }
+      },
+      "farmerId": "schema:Text",
+      "gender": {
+        "@id": "schema:gender",
+        "@container": "@list",
+        "@context": {
+          "language": "schema:inLanguage",
+          "value": "schema:Text"
+        }
+      },
+      "phoneNumber": "schema:telephone",
+      "dateOfBirth": "schema:birthDate",
+      "address": {
+        "@id": "schema:address",
+        "@context": {
+          "village": {
+            "@id": "schema:addressLocality",
+            "@container": "@language"
+          },
+          "district": {
+            "@id": "schema:addressRegion",
+            "@container": "@language"
+          },
+          "state": {
+            "@id": "schema:addressRegion",
+            "@container": "@language"
+          }
+        }
+      },
+      "primaryCommodity": {
+        "@id": "schema:productSupported",
+        "@container": "@language"
+      },
+      "totalLandArea": {
+        "@id": "schema:area",
+        "@context": {
+          "value": "schema:value",
+          "unit": {
+            "@id": "schema:unitText",
+            "@container": "@language"
+          }
+        }
+      },
+      "ownershipType": {
+        "@id": "schema:Text",
+        "@container": "@language"
+      },
+      "crops": {
+        "@id": "schema:productSupported",
+        "@container": "@list",
+        "@context": {
+          "cropName": {
+            "@id": "schema:name",
+            "@container": "@language"
+          },
+          "season": {
+            "@id": "schema:temporalCoverage",
+            "@container": "@language"
+          }
+        }
+      },
+      "face": "schema:Text"
     }
-}
+  }

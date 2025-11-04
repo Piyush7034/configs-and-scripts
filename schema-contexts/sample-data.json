@@ -1,0 +1,39 @@
+{
+  "@context": [
+    "https://www.w3.org/2018/credentials/v1",
+    "https://mosip.github.io/inji-config/contexts/farmer-context.json"
+  ],
+  "type": ["VerifiableCredential", "FarmerCredential"],
+  "issuer": "did:example:12345",
+  "issuanceDate": "2025-01-10T00:00:00Z",
+  "validUntil": "2026-01-10T00:00:00Z",
+  "credentialSubject": {
+    "id": "did:example:farmer123",
+    "fullName": "Ravi Kumar",
+    "dob": "1985-03-15",
+    "gender": "M",
+    "contactNumber": "+91-9876543210",
+    "email": "ravi.kumar@example.com",
+    "address": {
+      "type": "PostalAddress",
+      "locality": "Mandya",
+      "district": "Mandya",
+      "state": "Karnataka",
+      "country": "India"
+    },
+    "farm": {
+      "type": "Farm",
+      "farmId": "FARM-001",
+      "areaInHectares": 2.5,
+      "cropType": "Paddy",
+      "ownershipType": "Owned"
+    },
+    "subsidy": {
+      "type": "SubsidyScheme",
+      "schemeName": "PM-KISAN",
+      "schemeId": "SCH-123",
+      "amountReceived": 6000,
+      "lastDisbursedOn": "2025-09-01"
+    }
+  }
+}

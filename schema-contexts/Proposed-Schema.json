@@ -1,0 +1,51 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "schema": "https://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+
+    "FarmerCredential": "https://mosip.github.io/inji-config/contexts/farmer-context.json#FarmerCredential",
+    "Farm": "https://mosip.github.io/inji-config/contexts/farmer-context.json#Farm",
+    "Crop": "https://mosip.github.io/inji-config/contexts/farmer-context.json#Crop",
+    "PostalAddress": "schema:PostalAddress",
+
+    "authority": "schema:Organization",
+    "idType": "schema:identifier",
+    "fullName": "schema:name",
+    "farmerId": "schema:identifier",
+    "gender": "schema:gender",
+    "phoneNumber": "schema:telephone",
+    "dateOfBirth": {
+      "@id": "schema:birthDate",
+      "@type": "xsd:date"
+    },
+
+    "address": {
+      "@id": "schema:address",
+      "@type": "@id"
+    },
+
+    "farm": {
+      "@id": "schema:owns",
+      "@type": "@id"
+    },
+
+    "primaryCommodity": "schema:crop",
+    "totalLandArea": {
+      "@id": "schema:area",
+      "value": {
+        "@id": "schema:value",
+        "@type": "xsd:decimal"
+      },
+      "unit": "schema:unitText"
+    },
+    "ownershipType": "schema:ownershipFundingInfo",
+
+    "crops": {
+      "@id": "schema:hasPart",
+      "@type": "@id"
+    },
+    "cropName": "schema:name",
+    "season": "schema:season"
+  }
+}

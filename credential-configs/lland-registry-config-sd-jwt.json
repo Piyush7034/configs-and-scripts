@@ -1,0 +1,177 @@
+{
+    "credentialConfigKeyId": "RegistrationReceiptCredential_SDJWT",
+    "vcTemplate": "ew0KICAgICAgIA0KICAgICAgICAgImlzc3VlciI6ICIke19pc3N1ZXJ9IiwNCiAgICAgICAgICJpc3N1YW5jZURhdGUiOiAiJHt2YWxpZEZyb219IiwNCiAgICAgICAgICJleHBpcmF0aW9uRGF0ZSI6ICIke3ZhbGlkVW50aWx9IiwNCiAgICAgICAgICAgICJOdW1iZXJPZkNBUiI6ICIke2Nhcl9yZWdpc3RyYXRpb25fbnVtYmVyfSIsDQogICAgICAgICAgICAiUmVnaXN0cmF0aW9uRGF0ZSI6ICIke3JlZ2lzdHJhdGlvbl9kYXRlfSIsDQogICAgICAgICAgICAiUnVyYWxQcm9wZXJ0eU5hbWUiOiAiJHtydXJhbF9wcm9wZXJ0eV9uYW1lfSIsDQogICAgICAgICAgICAiTXVuaWNpcGFsaXR5IjogIiR7bXVuaWNpcGFsaXR5fSIsDQogICAgICAgICAgICAiTGF0aXR1ZGUiOiAiJHtsYXRpdHVkZX0iLA0KICAgICAgICAgICAgIkxvbmdpdHVkZSI6ICIke2xvbmdpdHVkZX0iLA0KICAgICAgICAgICAgIlRvdGFsQXJlYSI6ICR7dG90YWxfYXJlYX0sDQogICAgICAgICAgICAiRmlzY2FsTW9kdWxlcyI6ICR7ZmlzY2FsX21vZHVsZXN9LA0KICAgICAgICAgICAgIlByb3RvY29sQ29kZSI6ICIke3Byb3RvY29sX2NvZGV9IiwNCiAgICAgICAgICAgICJDUEYiOiAiJHtjcGZ9IiwNCiAgICAgICAgICAgICJIb2xkZXJOYW1lIjogIiR7aG9sZGVyX25hbWV9IiwNCiAgICAgICAgICAgICJUb3RhbERlY2xhcmVkQXJlYSI6ICR7dG90YWxfYXJlYV9kZWNsYXJlZH0sDQogICAgICAgICAgICAiQWRtaW5pc3RyYXRpdmVFYXNlbWVudEFyZWEiOiAke2FkbWluaXN0cmF0aXZlX2Vhc2VtZW50X2FyZWF9LA0KICAgICAgICAgICAgIk5ldEFyZWEiOiAke25ldF9hcmVhfSwNCiAgICAgICAgICAgICJDb25zb2xpZGF0ZWRBcmVhIjogJHtjb25zb2xpZGF0ZWRfYXJlYX0sDQogICAgICAgICAgICAiTmF0aXZlVmVnZXRhdGlvblJlbW5hbnQiOiAke25hdGl2ZV92ZWdldGF0aW9uX3JlbW5hbnR9LA0KICAgICAgICAgICAgIkxlZ2FsUmVzZXJ2ZUFyZWEiOiAke2xlZ2FsX3Jlc2VydmVfYXJlYX0sDQogICAgICAgICAgICAiUGVybWFuZW50UHJlc2VydmF0aW9uQXJlYSI6ICR7cGVybWFuZW50X3ByZXNlcnZhdGlvbl9hcmVhfSwNCiAgICAgICAgICAgICJSZXN0cmljdGVkVXNlQXJlYSI6ICR7cmVzdHJpY3RlZF91c2VfYXJlYX0NCiAgICAgfQ==",
+    "keyManagerAppId": "CERTIFY_VC_SIGN_ED25519",
+    "keyManagerRefId": "ED25519_SIGN",
+    "signatureAlgo": "EdDSA",
+    "sdJwtVct": "RegistrationReceiptCredential_SDJWT",
+  "credentialFormat": "vc+sd-jwt",
+  "didUrl": "did:web:mosip.github.io:inji-config:released:landregistry",
+  "metaDataDisplay": [{
+    "name": "REGISTRATION RECEIPT OF THE RURAL PROPERTY IN CAR",
+    "locale": "en",
+    "logo": {
+      "url": "https://mosip.github.io/inji-config/logos/agro-vertias-logo.png",
+      "alt_text": "Registration Receipt Credential logo"
+    },
+	"background_image": { "uri": "https://mosip.github.io/inji-config/logos/agro-vertias-logo.png" },
+    "background_color": "#ebfaff",
+    "text_color": "#000000"
+  }],
+  "displayOrder": ["NumberOfCAR","RegistrationDate","RuralPropertyName","Municipality","Latitude","Longitude","TotalArea","FiscalModules","ProtocolCode","CPF","HolderName","TotalDeclaredArea","AdministrativeEasementArea","NetArea","ConsolidatedArea","NativeVegetationRemnant","LegalReserveArea","PermanentPreservationArea","RestrictedUseArea"],
+  "scope": "land_registry_vc_ldp",
+  "credentialSubjectDefinition": {
+    "NumberOfCAR": {
+      "display": [
+        {
+          "name": "CAR Registration Number",
+          "locale": "en"
+        }
+      ]
+    },
+    "RegistrationDate": {
+      "display": [
+        {
+          "name": "Registration Date",
+          "locale": "en"
+        }
+      ]
+    },
+    "RuralPropertyName": {
+      "display": [
+        {
+          "name": "Rural Property Name",
+          "locale": "en"
+        }
+      ]
+    },
+    "Municipality": {
+      "display": [
+        {
+          "name": "Municipality",
+          "locale": "en"
+        }
+      ]
+    },
+    "Latitude": {
+      "display": [
+        {
+          "name": "Latitude",
+          "locale": "en"
+        }
+      ]
+    },
+    "Longitude": {
+      "display": [
+        {
+          "name": "Longitude",
+          "locale": "en"
+        }
+      ]
+    },
+    "TotalArea": {
+      "display": [
+        {
+          "name": "Total Area",
+          "locale": "en"
+        }
+      ]
+    },
+    "FiscalModules": {
+      "display": [
+        {
+          "name": "Fiscal Modules",
+          "locale": "en"
+        }
+      ]
+    },
+    "ProtocolCode": {
+      "display": [
+        {
+          "name": "Protocol Code",
+          "locale": "en"
+        }
+      ]
+    },
+    "CPF": {
+      "display": [
+        {
+          "name": "CPF",
+          "locale": "en"
+        }
+      ]
+    },
+    "HolderName": {
+      "display": [
+        {
+          "name": "Holder Name",
+          "locale": "en"
+        }
+      ]
+    },
+    "TotalDeclaredArea": {
+      "display": [
+        {
+          "name": "Total Declared Area",
+          "locale": "en"
+        }
+      ]
+    },
+    "AdministrativeEasementArea": {
+      "display": [
+        {
+          "name": "Administrative Easement Area",
+          "locale": "en"
+        }
+      ]
+    },
+    "NetArea": {
+      "display": [
+        {
+          "name": "Net Area",
+          "locale": "en"
+        }
+      ]
+    },
+    "ConsolidatedArea": {
+      "display": [
+        {
+          "name": "Consolidated Area",
+          "locale": "en"
+        }
+      ]
+    },
+    "NativeVegetationRemnant": {
+      "display": [
+        {
+          "name": "Native Vegetation Remnant",
+          "locale": "en"
+        }
+      ]
+    },
+    "LegalReserveArea": {
+      "display": [
+        {
+          "name": "Legal Reserve Area",
+          "locale": "en"
+        }
+      ]
+    },
+    "PermanentPreservationArea": {
+      "display": [
+        {
+          "name": "Permanent Preservation Area",
+          "locale": "en"
+        }
+      ]
+    },
+    "RestrictedUseArea": {
+      "display": [
+        {
+          "name": "Restricted Use Area",
+          "locale": "en"
+        }
+      ]
+    }
+  }
+}

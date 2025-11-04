@@ -1,0 +1,42 @@
+{
+  "@context": [
+    { "@version": 1.1 },
+    {
+      "schema": "https://schema.org/",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "farmer": "https://w3id.org/mosip/farmer/v1#",
+
+      "language": "@language",
+      "value": "@value",
+
+      "farmerId": { "@id": "schema:identifier" },
+
+      "farmerType": { "@id": "farmer:farmerType", "@type": "xsd:string" },
+
+      "authority": { "@id": "schema:issuedBy" },
+      "recognizedBy": { "@id": "schema:recognizedBy" },
+
+      "ownershipType": { "@id": "farmer:ownershipType", "@type": "xsd:string" },
+
+      "name": {
+        "@id": "schema:name",
+        "@context": { "value": "@value", "language": "@language" }
+      },
+
+      "address": {
+        "@id": "schema:address",
+        "@context": {
+          "type": "@type",
+          "PostalAddress": "schema:PostalAddress",
+          "streetAddress": "schema:streetAddress",
+          "extendedAddress": "schema:extendedAddress",
+          "addressLocality": "schema:addressLocality",
+          "addressRegion": "schema:addressRegion",
+          "postalCode": "schema:postalCode",
+          "addressCountry": "schema:addressCountry"
+        }
+      }
+    }
+  ]
+}

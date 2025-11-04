@@ -4,6 +4,7 @@
     "keyManagerAppId": "CERTIFY_VC_SIGN_ED25519",
     "keyManagerRefId": "ED25519_SIGN",
     "signatureAlgo": "EdDSA",
+    "signatureCryptoSuite": "Ed25519Signature2020",
   "contextURLs": [
     "https://www.w3.org/2018/credentials/v1",
     "https://mosip.github.io/inji-config/contexts/landregistry-registration-receipt-context.json"
@@ -13,7 +14,7 @@
     "RegistrationReceiptCredential"
   ],
   "credentialFormat": "ldp_vc",
-  "didUrl": "did:web:mosip.github.io:inji-config:dev-int-inji:landregistry-ed25519#key-0",
+  "didUrl": "did:web:mosip.github.io:inji-config:released:landregistry",
   "metaDataDisplay": [{
     "name": "REGISTRATION RECEIPT OF THE RURAL PROPERTY IN CAR",
     "locale": "en",
@@ -27,7 +28,6 @@
   }],
   "displayOrder": ["NumberOfCAR","RegistrationDate","RuralPropertyName","Municipality","Latitude","Longitude","TotalArea","FiscalModules","ProtocolCode","CPF","HolderName","TotalDeclaredArea","AdministrativeEasementArea","NetArea","ConsolidatedArea","NativeVegetationRemnant","LegalReserveArea","PermanentPreservationArea","RestrictedUseArea"],
   "scope": "land_registry_vc_ldp",
-  "doctype": null,
   "credentialSubjectDefinition": {
     "NumberOfCAR": {
       "display": [
@@ -181,13 +181,5 @@
         }
       ]
     }
-  },
-  "pluginConfigurations": [
-    {
-      "mosip.certify.data-provider-plugin.postgres.scope-query-mapping": {
-		"land_statement_vc_ldp": "select * from statement_data where statement_id=:id",
-		"land_registry_vc_ldp": "select * from registration_receipt_data where registration_id=:id"
-	  }
-    }
-  ]
+  }
 }

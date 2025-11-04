@@ -1,0 +1,44 @@
+{
+  "@context": [
+    "https://www.w3.org/2018/credentials/v1",
+    "https://mosip.github.io/inji-config/contexts/farmer-context.json"
+  ],
+  "type": ["VerifiableCredential", "FarmerCredential"],
+  "issuer": "did:example:12345",
+  "issuanceDate": "2025-01-10T00:00:00Z",
+  "validUntil": "2026-01-10T00:00:00Z",
+  "credentialSubject": {
+    "authority": "Agro Veritas Authority",
+    "idType": "Farmer ID",
+    "fullName": "string",
+    "farmerId": "string",
+    "gender": "string",
+    "phoneNumber": "string",
+    "dateOfBirth": "YYYY-MM-DD",
+    
+    "address": {
+      "village": "string",
+      "district": "string",
+      "state": "string"
+    },
+
+    "farm": {
+        "primaryCommodity": "string",
+        "totalLandArea": {
+            "value": "number",
+            "unit": "hectares"
+        },
+        "ownershipType": "string",
+        "crops": [
+            {
+                "cropName": "string",
+                "season": "string"
+            },
+            {
+                "cropName": "string",
+                "season": "string"
+            }
+        ]
+    }
+  }
+}

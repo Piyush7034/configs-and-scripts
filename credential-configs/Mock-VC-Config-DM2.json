@@ -14,7 +14,7 @@
     "MockVerifiableCredential"
   ],
   "credentialFormat": "ldp_vc",
-  "didUrl": "did:web:mosip.github.io:inji-config:dev-int-inji:mock-identity-ecr1",
+  "didUrl": "did:web:mosip.github.io:inji-config:released:mock-identity",
   "metaDataDisplay": [{
     "name": "Mock Verifiable Credential",
     "locale": "en",
